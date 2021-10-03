@@ -18,7 +18,17 @@ class SignUpVC: UIViewController {
         nextBtn.tintColor = .white
         nextBtn.backgroundColor = UIColor(named: "blue")
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
-        // Do any additional setup after loading the view.
+        
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        pwTextField.delegate = self
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    @IBAction func tapShowPWBtn(_ sender: Any) {
+        showPWBtn.isSelected.toggle()
+        pwTextField.isSecureTextEntry.toggle()
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
@@ -28,4 +38,16 @@ class SignUpVC: UIViewController {
         self.present(nextVC, animated: true, completion: nil)
     }
 
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+}
+
+extension SignUpVC: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if nameTextField.text != "" && emailTextField.text != "" && pwTextField.text != "" {
+            nextBtn.isEnabled = true
+            nextBtn.backgroundColor = UIColor(named: "blue")
+        }
+    }
 }

@@ -16,11 +16,17 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextBtn.tintColor = .white
-        nextBtn.backgroundColor = UIColor(named: "blue")
+        nextBtn.isEnabled = false
+        nextBtn.titleLabel?.textColor = .white
+        nextBtn.backgroundColor = .gray
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
-
-        // Do any additional setup after loading the view.
+        
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        pwTextField.delegate = self
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
 
     @IBAction func tapNewAccountBtn(_ sender: Any) {
@@ -33,5 +39,16 @@ class SignInVC: UIViewController {
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true, completion: nil)
     }
-    
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+}
+
+extension SignInVC: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if nameTextField.text != "" && emailTextField.text != "" && pwTextField.text != "" {
+            nextBtn.isEnabled = true
+            nextBtn.backgroundColor = UIColor(named: "blue")
+        }
+    }
 }
