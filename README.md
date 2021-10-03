@@ -1,5 +1,10 @@
 ![KakaoTalk_Photo_2021-10-02-17-32-08](https://user-images.githubusercontent.com/43312096/135709388-8e13b428-259b-4ce2-984d-3646114efa6d.png)
-
+# Git flow
+* main
+* feature
+  * /week1-seminar
+  * /week1-homework
+  * /week2-seminar
 # Commit Message Convention
 
 ✅ [CHORE]: 코드 수정, 내부 파일 수정
