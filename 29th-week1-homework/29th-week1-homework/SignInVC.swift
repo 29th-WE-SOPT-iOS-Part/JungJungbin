@@ -49,6 +49,9 @@ extension SignInVC: UITextFieldDelegate {
         if nameTextField.text != "" && emailTextField.text != "" && pwTextField.text != "" {
             nextBtn.isEnabled = true
             nextBtn.backgroundColor = UIColor(named: "blue")
+        } else {
+            nextBtn.isEnabled = false
+            nextBtn.backgroundColor = .gray
         }
     }
 }

@@ -30,6 +30,12 @@ class SignUpVC: UIViewController {
     @IBAction func tapShowPWBtn(_ sender: Any) {
         showPWBtn.isSelected.toggle()
         pwTextField.isSecureTextEntry.toggle()
+        if showPWBtn.isSelected {
+            showPWBtn.tintColor = UIColor(named: "blue")
+        } else {
+            showPWBtn.tintColor = .gray
+        }
+        
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
@@ -49,6 +55,9 @@ extension SignUpVC: UITextFieldDelegate {
         if nameTextField.text != "" && emailTextField.text != "" && pwTextField.text != "" {
             nextBtn.isEnabled = true
             nextBtn.backgroundColor = UIColor(named: "blue")
+        } else {
+            nextBtn.isEnabled = false
+            nextBtn.backgroundColor = .gray
         }
     }
 }
