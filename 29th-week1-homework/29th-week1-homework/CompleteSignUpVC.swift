@@ -7,11 +7,16 @@
 
 import UIKit
 
-class CompleteSignUpVC: UIViewController {
-
+class CompleteVC: UIViewController {
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var nextBtn: UIButton!
+    var receiveData = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        welcomeLabel.text = "\(receiveData) 님 환영합니다!"
+        nextBtn.tintColor = .white
+        nextBtn.backgroundColor = UIColor(named: "blue")
         // Do any additional setup after loading the view.
     }
     
