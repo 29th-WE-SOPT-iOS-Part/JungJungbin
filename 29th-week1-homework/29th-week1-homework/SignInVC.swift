@@ -18,6 +18,8 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         nextBtn.tintColor = .white
         nextBtn.backgroundColor = UIColor(named: "blue")
+        nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
+
         // Do any additional setup after loading the view.
     }
 

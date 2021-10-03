@@ -17,6 +17,8 @@ class CompleteVC: UIViewController {
         welcomeLabel.text = "\(receiveData) 님 환영합니다!"
         nextBtn.tintColor = .white
         nextBtn.backgroundColor = UIColor(named: "blue")
+        nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
+
         // Do any additional setup after loading the view.
     }
     
