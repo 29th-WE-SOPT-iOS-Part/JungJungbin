@@ -15,8 +15,9 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var nextBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextBtn.tintColor = .white
-        nextBtn.backgroundColor = UIColor(named: "blue")
+        nextBtn.isEnabled = false
+        nextBtn.titleLabel?.textColor = .white
+        nextBtn.backgroundColor = .gray
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
         
         nameTextField.delegate = self
