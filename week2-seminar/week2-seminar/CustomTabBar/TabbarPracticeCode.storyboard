@@ -11,14 +11,13 @@
         <!--Item 2-->
         <scene sceneID="D0S-72-b2C">
             <objects>
-                <viewController id="7lr-jG-97Y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PurpleVC" id="7lr-jG-97Y" customClass="PurpleVC" customModule="week2_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W3d-iY-TtT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="purple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDu-Yf-0h9">
-                                <rect key="frame" x="163" y="432" width="82" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDu-Yf-0h9">
+                                <rect key="frame" x="166" y="431.5" width="82" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,6 +25,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TWN-L7-gEg"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="dDu-Yf-0h9" firstAttribute="centerX" secondItem="W3d-iY-TtT" secondAttribute="centerX" id="03r-en-ZeG"/>
+                            <constraint firstItem="dDu-Yf-0h9" firstAttribute="centerY" secondItem="W3d-iY-TtT" secondAttribute="centerY" id="ubm-Ot-40q"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="M7a-VV-pfj"/>
                 </viewController>
@@ -36,14 +39,13 @@
         <!--Item 1-->
         <scene sceneID="nNL-Mr-MV2">
             <objects>
-                <viewController id="iNJ-aD-S6g" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrangeVC" id="iNJ-aD-S6g" customClass="OrangeVC" customModule="week2_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Pl-KL-s4F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="orange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-T8-P7w">
-                                <rect key="frame" x="163" y="432" width="89" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-T8-P7w">
+                                <rect key="frame" x="162.5" y="431.5" width="89" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,6 +53,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W0n-wu-6qv"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="9jJ-T8-P7w" firstAttribute="centerX" secondItem="3Pl-KL-s4F" secondAttribute="centerX" id="3BZ-kd-OlB"/>
+                            <constraint firstItem="9jJ-T8-P7w" firstAttribute="centerY" secondItem="3Pl-KL-s4F" secondAttribute="centerY" id="Hno-eU-p7R"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="vMp-SL-vD0"/>
                 </viewController>
@@ -58,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="-60.869565217391312" y="-152.00892857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="Q7h-CU-Smx">
             <objects>
-                <tabBarController id="LaO-JQ-Zqq" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="CustomTabBarController" id="LaO-JQ-Zqq" customClass="CustomTabBarController" customModule="week2_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gDp-zX-woK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

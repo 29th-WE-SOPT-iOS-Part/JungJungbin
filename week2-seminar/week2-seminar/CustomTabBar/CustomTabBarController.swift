@@ -11,8 +11,22 @@ class CustomTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setTabBar()
+    }
+    
+    func setTabBar() {
+        guard let orangeVC = self.storyboard?.instantiateViewController(withIdentifier: "OrangeVC"),
+              let purpleVC = self.storyboard?.instantiateViewController(withIdentifier: "PurpleVC")
+        else { return }
+        
+        orangeVC.tabBarItem.title = "Home"
+        orangeVC.tabBarItem.image = UIImage(systemName: "house")
+        orangeVC.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
+        purpleVC.tabBarItem.title = "Profile"
+        purpleVC.tabBarItem.image = UIImage(systemName: "person")
+        purpleVC.tabBarItem.selectedImage = UIImage(systemName: "person.fill")
+        
+        setViewControllers([orangeVC, purpleVC], animated: true)
     }
     
 
