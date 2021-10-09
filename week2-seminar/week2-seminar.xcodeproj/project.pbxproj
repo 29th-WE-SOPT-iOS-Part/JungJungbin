@@ -14,6 +14,7 @@
 		5CA231FD27115F9A001FD1CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA231FC27115F9A001FD1CC /* Assets.xcassets */; };
 		5CA2320027115F9A001FD1CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA231FE27115F9A001FD1CC /* LaunchScreen.storyboard */; };
 		5CA2320827115FF0001FD1CC /* AutoLayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA2320727115FF0001FD1CC /* AutoLayoutPractice.storyboard */; };
+		5CA2320A2711812C001FD1CC /* TabbarPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA232092711812C001FD1CC /* TabbarPractice.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5CA231FF27115F9A001FD1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CA2320127115F9A001FD1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CA2320727115FF0001FD1CC /* AutoLayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutPractice.storyboard; sourceTree = "<group>"; };
+		5CA232092711812C001FD1CC /* TabbarPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarPractice.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				5CA231FE27115F9A001FD1CC /* LaunchScreen.storyboard */,
 				5CA2320127115F9A001FD1CC /* Info.plist */,
 				5CA2320727115FF0001FD1CC /* AutoLayoutPractice.storyboard */,
+				5CA232092711812C001FD1CC /* TabbarPractice.storyboard */,
 			);
 			path = "week2-seminar";
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				5CA2320027115F9A001FD1CC /* LaunchScreen.storyboard in Resources */,
 				5CA231FD27115F9A001FD1CC /* Assets.xcassets in Resources */,
 				5CA2320827115FF0001FD1CC /* AutoLayoutPractice.storyboard in Resources */,
+				5CA2320A2711812C001FD1CC /* TabbarPractice.storyboard in Resources */,
 				5CA231FB27115F95001FD1CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
