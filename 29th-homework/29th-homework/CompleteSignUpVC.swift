@@ -14,11 +14,12 @@ class CompleteVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
     }
     private func setUpUI() {
         welcomeLabel.text = "\(receiveData) 님 환영합니다!"
         nextBtn.tintColor = .white
-        nextBtn.backgroundColor = UIColor(named: "blue")
+        nextBtn.backgroundColor = .Blue
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
     }
 
