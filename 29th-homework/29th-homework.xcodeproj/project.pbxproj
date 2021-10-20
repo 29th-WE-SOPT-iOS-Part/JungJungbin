@@ -43,6 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C8FAD8C272052A900E35816 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5CC39AE32709B32E00FBB37B /* AppDelegate.swift */,
+				5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */,
+				5CC39AEC2709B33100FBB37B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C8FAD8D272052CF00E35816 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5CC39AEE2709B33100FBB37B /* LaunchScreen.storyboard */,
+				5CC39AE92709B32E00FBB37B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5C8FAD8E272052E700E35816 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				5CC39AE72709B32E00FBB37B /* SignInVC.swift */,
+				5CC39AF72709B55500FBB37B /* SignUpVC.swift */,
+				5CC39AF92709B58100FBB37B /* CompleteSignUpVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
 		5CC0E2812720440A00A07CB1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,15 +99,10 @@
 		5CC39AE22709B32E00FBB37B /* 29th-homework */ = {
 			isa = PBXGroup;
 			children = (
+				5C8FAD8E272052E700E35816 /* VCs */,
+				5C8FAD8D272052CF00E35816 /* Storyboards */,
+				5C8FAD8C272052A900E35816 /* Resources */,
 				5CC0E2812720440A00A07CB1 /* Extensions */,
-				5CC39AE32709B32E00FBB37B /* AppDelegate.swift */,
-				5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */,
-				5CC39AE72709B32E00FBB37B /* SignInVC.swift */,
-				5CC39AF72709B55500FBB37B /* SignUpVC.swift */,
-				5CC39AF92709B58100FBB37B /* CompleteSignUpVC.swift */,
-				5CC39AE92709B32E00FBB37B /* Main.storyboard */,
-				5CC39AEC2709B33100FBB37B /* Assets.xcassets */,
-				5CC39AEE2709B33100FBB37B /* LaunchScreen.storyboard */,
 				5CC39AF12709B33100FBB37B /* Info.plist */,
 			);
 			path = "29th-homework";
