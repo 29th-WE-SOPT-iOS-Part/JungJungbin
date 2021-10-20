@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CC0E2832720442700A07CB1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0E2822720442700A07CB1 /* UIColorExtension.swift */; };
 		5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE32709B32E00FBB37B /* AppDelegate.swift */; };
 		5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */; };
 		5CC39AE82709B32E00FBB37B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE72709B32E00FBB37B /* SignInVC.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CC0E2822720442700A07CB1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = ../../../../../UIColorExtension.swift; sourceTree = "<group>"; };
 		5CC39AE02709B32E00FBB37B /* 29th-homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29th-homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC39AE32709B32E00FBB37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC0E2812720440A00A07CB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0E2822720442700A07CB1 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5CC39AD72709B32E00FBB37B = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		5CC39AE22709B32E00FBB37B /* 29th-homework */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0E2812720440A00A07CB1 /* Extensions */,
 				5CC39AE32709B32E00FBB37B /* AppDelegate.swift */,
 				5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */,
 				5CC39AE72709B32E00FBB37B /* SignInVC.swift */,
@@ -149,6 +160,7 @@
 				5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */,
 				5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
+				5CC0E2832720442700A07CB1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
