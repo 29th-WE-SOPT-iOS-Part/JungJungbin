@@ -50,11 +50,14 @@ class SignInVC: UIViewController {
 extension SignInVC: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if nameTextField.text != "" && emailTextField.text != "" && pwTextField.text != "" {
-            nextBtn.isEnabled = true
-            nextBtn.backgroundColor = .Blue
+            setUpNextBtn(status: true)
         } else {
-            nextBtn.isEnabled = false
-            nextBtn.backgroundColor = .gray
+            setUpNextBtn(status: false)
         }
     }
+    private func setUpNextBtn(status: Bool) {
+        nextBtn.isEnabled = status
+        nextBtn.backgroundColor = status ? .Blue : .gray
+    }
+    
 }

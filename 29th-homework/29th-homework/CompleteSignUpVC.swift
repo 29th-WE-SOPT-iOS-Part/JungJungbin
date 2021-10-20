@@ -14,6 +14,7 @@ class CompleteVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
     }
     private func setUpUI() {
         welcomeLabel.text = "\(receiveData) 님 환영합니다!"
