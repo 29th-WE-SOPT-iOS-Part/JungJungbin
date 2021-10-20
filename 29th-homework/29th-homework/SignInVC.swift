@@ -51,7 +51,7 @@ extension SignInVC: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if nameTextField.text != "" && emailTextField.text != "" && pwTextField.text != "" {
             nextBtn.isEnabled = true
-            nextBtn.backgroundColor = UIColor(named: "blue")
+            nextBtn.backgroundColor = .Blue
         } else {
             nextBtn.isEnabled = false
             nextBtn.backgroundColor = .gray
