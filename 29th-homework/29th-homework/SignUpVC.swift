@@ -23,11 +23,7 @@ class SignUpVC: UIViewController {
     @IBAction func tapShowPWBtn(_ sender: Any) {
         showPWBtn.isSelected.toggle()
         pwTextField.isSecureTextEntry.toggle()
-        if showPWBtn.isSelected {
-            showPWBtn.tintColor = .Blue
-        } else {
-            showPWBtn.tintColor = .gray
-        }
+        showPWBtn.tintColor = showPWBtn.isSelected ? .Blue : .gray
         
     }
     
