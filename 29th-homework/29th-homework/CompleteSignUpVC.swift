@@ -14,23 +14,12 @@ class CompleteVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    private func setUpUI() {
         welcomeLabel.text = "\(receiveData) 님 환영합니다!"
         nextBtn.tintColor = .white
         nextBtn.backgroundColor = UIColor(named: "blue")
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

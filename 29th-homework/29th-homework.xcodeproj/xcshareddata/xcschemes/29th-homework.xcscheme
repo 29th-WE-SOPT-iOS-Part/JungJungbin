@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5CC39ADF2709B32E00FBB37B"
-               BuildableName = "29th-week1-homework.app"
-               BlueprintName = "29th-week1-homework"
-               ReferencedContainer = "container:29th-week1-homework.xcodeproj">
+               BuildableName = "29th-homework.app"
+               BlueprintName = "29th-homework"
+               ReferencedContainer = "container:29th-homework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5CC39ADF2709B32E00FBB37B"
-            BuildableName = "29th-week1-homework.app"
-            BlueprintName = "29th-week1-homework"
-            ReferencedContainer = "container:29th-week1-homework.xcodeproj">
+            BuildableName = "29th-homework.app"
+            BlueprintName = "29th-homework"
+            ReferencedContainer = "container:29th-homework.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5CC39ADF2709B32E00FBB37B"
-            BuildableName = "29th-week1-homework.app"
-            BlueprintName = "29th-week1-homework"
-            ReferencedContainer = "container:29th-week1-homework.xcodeproj">
+            BuildableName = "29th-homework.app"
+            BlueprintName = "29th-homework"
+            ReferencedContainer = "container:29th-homework.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

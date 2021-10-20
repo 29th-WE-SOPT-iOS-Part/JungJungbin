@@ -14,7 +14,7 @@
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SignInVC" id="BYZ-38-t0r" customClass="SignInVC" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" id="BYZ-38-t0r" customClass="SignInVC" customModule="_9th_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
         <!--CompleteVC-->
         <scene sceneID="uZq-eW-ztd">
             <objects>
-                <viewController storyboardIdentifier="CompleteVC" id="qy1-W2-jn0" customClass="CompleteVC" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompleteVC" id="qy1-W2-jn0" customClass="CompleteVC" customModule="_9th_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1kF-ZU-f3f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
         <!--Sign UpVC-->
         <scene sceneID="IYO-st-Lk7">
             <objects>
-                <viewController storyboardIdentifier="SignUpVC" id="oKf-IJ-imx" customClass="SignUpVC" customModule="_9th_week1_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="oKf-IJ-imx" customClass="SignUpVC" customModule="_9th_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IXw-O1-9A9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

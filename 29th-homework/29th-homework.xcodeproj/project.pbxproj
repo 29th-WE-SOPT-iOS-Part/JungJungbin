@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CC0E2832720442700A07CB1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0E2822720442700A07CB1 /* UIColorExtension.swift */; };
 		5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE32709B32E00FBB37B /* AppDelegate.swift */; };
 		5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */; };
 		5CC39AE82709B32E00FBB37B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE72709B32E00FBB37B /* SignInVC.swift */; };
@@ -18,7 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5CC39AE02709B32E00FBB37B /* 29th-week1-homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29th-week1-homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC0E2822720442700A07CB1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = ../../../../../UIColorExtension.swift; sourceTree = "<group>"; };
+		5CC39AE02709B32E00FBB37B /* 29th-homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29th-homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC39AE32709B32E00FBB37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5CC39AE72709B32E00FBB37B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -41,10 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC0E2812720440A00A07CB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0E2822720442700A07CB1 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5CC39AD72709B32E00FBB37B = {
 			isa = PBXGroup;
 			children = (
-				5CC39AE22709B32E00FBB37B /* 29th-week1-homework */,
+				5CC39AE22709B32E00FBB37B /* 29th-homework */,
 				5CC39AE12709B32E00FBB37B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +62,15 @@
 		5CC39AE12709B32E00FBB37B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CC39AE02709B32E00FBB37B /* 29th-week1-homework.app */,
+				5CC39AE02709B32E00FBB37B /* 29th-homework.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5CC39AE22709B32E00FBB37B /* 29th-week1-homework */ = {
+		5CC39AE22709B32E00FBB37B /* 29th-homework */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0E2812720440A00A07CB1 /* Extensions */,
 				5CC39AE32709B32E00FBB37B /* AppDelegate.swift */,
 				5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */,
 				5CC39AE72709B32E00FBB37B /* SignInVC.swift */,
@@ -70,15 +81,15 @@
 				5CC39AEE2709B33100FBB37B /* LaunchScreen.storyboard */,
 				5CC39AF12709B33100FBB37B /* Info.plist */,
 			);
-			path = "29th-week1-homework";
+			path = "29th-homework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CC39ADF2709B32E00FBB37B /* 29th-week1-homework */ = {
+		5CC39ADF2709B32E00FBB37B /* 29th-homework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CC39AF42709B33100FBB37B /* Build configuration list for PBXNativeTarget "29th-week1-homework" */;
+			buildConfigurationList = 5CC39AF42709B33100FBB37B /* Build configuration list for PBXNativeTarget "29th-homework" */;
 			buildPhases = (
 				5CC39ADC2709B32E00FBB37B /* Sources */,
 				5CC39ADD2709B32E00FBB37B /* Frameworks */,
@@ -88,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = "29th-week1-homework";
+			name = "29th-homework";
 			productName = "29th-week1-homework";
-			productReference = 5CC39AE02709B32E00FBB37B /* 29th-week1-homework.app */;
+			productReference = 5CC39AE02709B32E00FBB37B /* 29th-homework.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5CC39ADB2709B32E00FBB37B /* Build configuration list for PBXProject "29th-week1-homework" */;
+			buildConfigurationList = 5CC39ADB2709B32E00FBB37B /* Build configuration list for PBXProject "29th-homework" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CC39ADF2709B32E00FBB37B /* 29th-week1-homework */,
+				5CC39ADF2709B32E00FBB37B /* 29th-homework */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +160,7 @@
 				5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */,
 				5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
+				5CC0E2832720442700A07CB1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +311,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N4RT4KGQK9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "29th-week1-homework/Info.plist";
+				INFOPLIST_FILE = "29th-homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.madilyn.29th-week1-homework";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madilyn.29th-homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N4RT4KGQK9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "29th-week1-homework/Info.plist";
+				INFOPLIST_FILE = "29th-homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.madilyn.29th-week1-homework";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madilyn.29th-homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -353,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5CC39ADB2709B32E00FBB37B /* Build configuration list for PBXProject "29th-week1-homework" */ = {
+		5CC39ADB2709B32E00FBB37B /* Build configuration list for PBXProject "29th-homework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CC39AF22709B33100FBB37B /* Debug */,
@@ -362,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CC39AF42709B33100FBB37B /* Build configuration list for PBXNativeTarget "29th-week1-homework" */ = {
+		5CC39AF42709B33100FBB37B /* Build configuration list for PBXNativeTarget "29th-homework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CC39AF52709B33100FBB37B /* Debug */,

@@ -16,15 +16,7 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextBtn.isEnabled = false
-        nextBtn.titleLabel?.textColor = .white
-        nextBtn.backgroundColor = .gray
-        nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
-        
-        nameTextField.delegate = self
-        emailTextField.delegate = self
-        pwTextField.delegate = self
-        
+        setUpUI()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
         self.view.addGestureRecognizer(tapGesture)
     }
@@ -41,6 +33,17 @@ class SignInVC: UIViewController {
     }
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
+    }
+    
+    private func setUpUI() {
+        nextBtn.isEnabled = false
+        nextBtn.titleLabel?.textColor = .white
+        nextBtn.backgroundColor = .gray
+        nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
+        
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        pwTextField.delegate = self
     }
 }
 
