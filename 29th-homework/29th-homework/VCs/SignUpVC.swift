@@ -8,9 +8,9 @@
 import UIKit
 
 class SignUpVC: UIViewController {
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var nameTextField: LoginTextField!
+    @IBOutlet weak var emailTextField: LoginTextField!
+    @IBOutlet weak var pwTextField: LoginTextField!
     @IBOutlet weak var showPWBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class SignUpVC: UIViewController {
     @IBAction func tapShowPWBtn(_ sender: Any) {
         showPWBtn.isSelected.toggle()
         pwTextField.isSecureTextEntry.toggle()
-        showPWBtn.tintColor = showPWBtn.isSelected ? .Blue : .gray
+        showPWBtn.tintColor = showPWBtn.isSelected ? .Blue : .LightGray
         
     }
     
@@ -41,11 +41,14 @@ class SignUpVC: UIViewController {
         nextBtn.isEnabled = false
         nextBtn.titleLabel?.textColor = .white
         nextBtn.backgroundColor = .gray
-        nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
-        
-        nameTextField.delegate = self
-        emailTextField.delegate = self
-        pwTextField.delegate = self
+        nextBtn.layer.cornerRadius = nextBtn.frame.height / 10.5
+        [nameTextField, pwTextField, emailTextField].forEach {
+            $0?.layer.borderWidth = 1
+            $0?.layer.borderColor = UIColor.LightGray.cgColor
+            $0?.layer.cornerRadius = nameTextField.frame.height / 6
+            $0?.setPaddingLR(14.0)
+            $0?.delegate = self
+        }
     }
 }
 
