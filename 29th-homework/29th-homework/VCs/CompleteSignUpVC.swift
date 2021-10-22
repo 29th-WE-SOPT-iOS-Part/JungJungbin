@@ -26,5 +26,7 @@ class CompleteVC: UIViewController {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as? SignInVC else { return }
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
+    @IBAction func tapOKBtn(_ sender: Any) {
+    }
     
 }

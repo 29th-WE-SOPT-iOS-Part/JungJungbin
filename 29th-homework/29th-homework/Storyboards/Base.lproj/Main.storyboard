@@ -154,6 +154,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="확인">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOKBtn:" destination="qy1-W2-jn0" eventType="touchUpInside" id="m60-gg-QYM"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-2F-zTr">
                                 <rect key="frame" x="148" y="292" width="118" height="40"/>

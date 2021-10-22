@@ -17,6 +17,8 @@
 		5CC39AF82709B55500FBB37B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AF72709B55500FBB37B /* SignUpVC.swift */; };
 		5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AF92709B58100FBB37B /* CompleteSignUpVC.swift */; };
 		5CEF1D292721B7040068918E /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D282721B7040068918E /* LoginTextField.swift */; };
+		5CEF1D2B272257800068918E /* TabBarHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEF1D2A272257800068918E /* TabBarHome.storyboard */; };
+		5CEF1D2D2722584D0068918E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D2C2722584D0068918E /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5CC39AF72709B55500FBB37B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5CC39AF92709B58100FBB37B /* CompleteSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpVC.swift; sourceTree = "<group>"; };
 		5CEF1D282721B7040068918E /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		5CEF1D2A272257800068918E /* TabBarHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarHome.storyboard; sourceTree = "<group>"; };
+		5CEF1D2C2722584D0068918E /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				5CC39AEE2709B33100FBB37B /* LaunchScreen.storyboard */,
 				5CC39AE92709B32E00FBB37B /* Main.storyboard */,
+				5CEF1D2A272257800068918E /* TabBarHome.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				5CEF1D282721B7040068918E /* LoginTextField.swift */,
+				5CEF1D2C2722584D0068918E /* CustomTabBarController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC39AF02709B33100FBB37B /* LaunchScreen.storyboard in Resources */,
+				5CEF1D2B272257800068918E /* TabBarHome.storyboard in Resources */,
 				5CC39AED2709B33100FBB37B /* Assets.xcassets in Resources */,
 				5CC39AEB2709B32E00FBB37B /* Main.storyboard in Resources */,
 			);
@@ -192,6 +199,7 @@
 			files = (
 				5CC39AF82709B55500FBB37B /* SignUpVC.swift in Sources */,
 				5CC39AE82709B32E00FBB37B /* SignInVC.swift in Sources */,
+				5CEF1D2D2722584D0068918E /* CustomTabBarController.swift in Sources */,
 				5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */,
 				5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
