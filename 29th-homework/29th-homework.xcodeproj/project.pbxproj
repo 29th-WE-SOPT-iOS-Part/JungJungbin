@@ -29,6 +29,7 @@
 		5CEF1D3D272259EE0068918E /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D3C272259EE0068918E /* AddVC.swift */; };
 		5CEF1D3F272259EF0068918E /* SubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D3E272259EF0068918E /* SubVC.swift */; };
 		5CEF1D41272259F00068918E /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D40272259F00068918E /* LibraryVC.swift */; };
+		5CEF1D4327225CD60068918E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D4227225CD60068918E /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		5CEF1D3C272259EE0068918E /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		5CEF1D3E272259EF0068918E /* SubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubVC.swift; sourceTree = "<group>"; };
 		5CEF1D40272259F00068918E /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
+		5CEF1D4227225CD60068918E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8FAD8A2720484300E35816 /* UIColorExtension.swift */,
+				5CEF1D4227225CD60068918E /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */,
 				5CEF1D3B272259ED0068918E /* ShortsVC.swift in Sources */,
 				5CEF1D3D272259EE0068918E /* AddVC.swift in Sources */,
+				5CEF1D4327225CD60068918E /* UIImageExtension.swift in Sources */,
 				5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
 				5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */,

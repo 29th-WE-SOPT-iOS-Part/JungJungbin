@@ -15,20 +15,33 @@ class CustomTabBarController: UITabBarController {
     }
     
     func setTabBar() {
-        guard let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC"),
-              let shortsVC = self.storyboard?.instantiateViewController(withIdentifier: "ShortsVC"),
-              let addVC = self.storyboard?.instantiateViewController(withIdentifier: "AddVC"),
-              let subVC = self.storyboard?.instantiateViewController(withIdentifier: "SubVC"),
-              let libraryVC = self.storyboard?.instantiateViewController(withIdentifier: "LibraryVC")
+        guard let homeVC = UIStoryboard(name: "HomeVC", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeVC,
+              let shortsVC = UIStoryboard(name: "ShortsVC", bundle: nil).instantiateViewController(withIdentifier: "ShortsVC") as? ShortsVC,
+              let addVC = UIStoryboard(name: "AddVC", bundle: nil).instantiateViewController(withIdentifier: "AddVC") as? AddVC,
+              let subVC = UIStoryboard(name: "SubVC", bundle: nil).instantiateViewController(withIdentifier: "SubVC") as? SubVC,
+              let libraryVC = UIStoryboard(name: "LibraryVC", bundle: nil).instantiateViewController(withIdentifier: "LibraryVC") as? LibraryVC
         else { return }
         
-        homeVC.tabBarItem.title = "Home"
-        homeVC.tabBarItem.image = UIImage(systemName: "house")
-        homeVC.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
-        shortsVC.tabBarItem.title = "Profile"
-        shortsVC.tabBarItem.image = UIImage(systemName: "person")
-        shortsVC.tabBarItem.selectedImage = UIImage(systemName: "person.fill")
+        homeVC.tabBarItem.title = "홈"
+        homeVC.tabBarItem.image = .homeIcon
+        homeVC.tabBarItem.selectedImage = .homeIconFill
         
-        setViewControllers([redVC, orangeVC, yellowVC, greenVC, blueVC], animated: true)
+        shortsVC.tabBarItem.title = "Shorts"
+        shortsVC.tabBarItem.image = .shortsIcon
+        shortsVC.tabBarItem.selectedImage = .shortsIconFill
+        
+        addVC.tabBarItem.title = "추가"
+        addVC.tabBarItem.image = .plusCircleIcon
+        addVC.tabBarItem.selectedImage = .plusCircleIcon
+        
+        subVC.tabBarItem.title = "구독"
+        subVC.tabBarItem.image = .subscriptionsIcon
+        subVC.tabBarItem.selectedImage = .subscriptionsIconFill
+        
+        libraryVC.tabBarItem.title = "보관함"
+        libraryVC.tabBarItem.image = .libraryIcon
+        libraryVC.tabBarItem.selectedImage = .libraryIconFill
+        
+        setViewControllers([homeVC, shortsVC, addVC, subVC, libraryVC], animated: true)
     }
 }
