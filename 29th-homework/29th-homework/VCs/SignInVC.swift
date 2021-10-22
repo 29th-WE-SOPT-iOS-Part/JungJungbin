@@ -30,8 +30,8 @@ class SignInVC: UIViewController {
     @IBAction func tapNextBtn(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CompleteVC") as? CompleteVC else { return }
         nextVC.receiveData = nameTextField.text ?? ""
-        nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextVC, animated: true)
+
     }
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)

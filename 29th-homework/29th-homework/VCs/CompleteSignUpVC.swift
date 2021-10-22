@@ -22,5 +22,9 @@ class CompleteVC: UIViewController {
         nextBtn.backgroundColor = .Blue
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 10.5
     }
-
+    @IBAction func tapAddAcountBtn(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as? SignInVC else { return }
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
 }
