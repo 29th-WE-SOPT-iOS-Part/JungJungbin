@@ -17,10 +17,10 @@ class CompleteVC: UIViewController {
         setUpUI()
     }
     private func setUpUI() {
-        welcomeLabel.text = "\(receiveData) 님 환영합니다!"
+        welcomeLabel.text = "\(receiveData) 님\n환영합니다!"
         nextBtn.tintColor = .white
         nextBtn.backgroundColor = .Blue
-        nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
+        nextBtn.layer.cornerRadius = nextBtn.frame.height / 10.5
     }
 
 }

@@ -88,6 +88,7 @@
                                     <constraint firstAttribute="height" constant="42" id="tdt-I7-nnC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" name="Blue"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="계정 만들기"/>
                                 <connections>
@@ -143,31 +144,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hA-et-eQr">
-                                <rect key="frame" x="141" y="278" width="133" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ㅇㅇㅇ 님 환영합니다!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVd-Rz-d0N">
-                                <rect key="frame" x="144" y="348" width="127" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfc-HN-R7k">
+                                <rect key="frame" x="22" y="439.33333333333331" width="370" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="VM7-Kg-X4j"/>
+                                </constraints>
+                                <color key="tintColor" name="Blue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="확인">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-2F-zTr">
+                                <rect key="frame" x="148" y="292" width="118" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Nm4-uF-wlp"/>
+                                    <constraint firstAttribute="width" constant="118" id="sNX-r4-mFT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6C-mM-bfU">
+                                <rect key="frame" x="22" y="504.33333333333326" width="370" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" name="Blue"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다른 계정으로 로그인하기"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ㅇㅇㅇ 님 환영합니다!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVd-Rz-d0N">
+                                <rect key="frame" x="96" y="355" width="222" height="31"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfc-HN-R7k">
-                                <rect key="frame" x="20" y="505" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="다음">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7A8-NT-It2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LVd-Rz-d0N" firstAttribute="centerX" secondItem="1kF-ZU-f3f" secondAttribute="centerX" id="1qe-WR-Oqt"/>
+                            <constraint firstItem="D6C-mM-bfU" firstAttribute="leading" secondItem="Bfc-HN-R7k" secondAttribute="leading" id="BuM-Up-shm"/>
+                            <constraint firstItem="Bfc-HN-R7k" firstAttribute="top" secondItem="LVd-Rz-d0N" secondAttribute="bottom" constant="53" id="Ka7-8k-K4l"/>
+                            <constraint firstItem="7A8-NT-It2" firstAttribute="trailing" secondItem="Bfc-HN-R7k" secondAttribute="trailing" constant="22" id="Yb1-zH-FEB"/>
+                            <constraint firstItem="LVd-Rz-d0N" firstAttribute="top" secondItem="8B2-2F-zTr" secondAttribute="bottom" constant="23" id="f7h-bj-BUH"/>
+                            <constraint firstItem="Bfc-HN-R7k" firstAttribute="leading" secondItem="7A8-NT-It2" secondAttribute="leading" constant="22" id="fIU-m5-qPc"/>
+                            <constraint firstItem="D6C-mM-bfU" firstAttribute="top" secondItem="Bfc-HN-R7k" secondAttribute="bottom" constant="23" id="qpj-xs-Rrw"/>
+                            <constraint firstItem="8B2-2F-zTr" firstAttribute="top" secondItem="7A8-NT-It2" secondAttribute="top" constant="248" id="vwF-7k-RGa"/>
+                            <constraint firstItem="8B2-2F-zTr" firstAttribute="centerX" secondItem="1kF-ZU-f3f" secondAttribute="centerX" id="w0R-0z-DwP"/>
+                            <constraint firstItem="D6C-mM-bfU" firstAttribute="trailing" secondItem="Bfc-HN-R7k" secondAttribute="trailing" id="zt6-a3-pea"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nextBtn" destination="Bfc-HN-R7k" id="9gD-Lf-kpc"/>
@@ -218,9 +240,6 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 표시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofw-Sg-opW">
                                 <rect key="frame" x="49" y="580.33333333333337" width="100" height="15.666666666666629"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="2S2-Vl-q1d"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -249,7 +268,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="C6e-kE-yLZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" name="Blue"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="다음">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,8 +296,8 @@
                             <constraint firstItem="URu-uy-6R4" firstAttribute="leading" secondItem="3EO-fO-gxW" secondAttribute="leading" constant="22" id="2t0-ec-KX7"/>
                             <constraint firstItem="lKe-1i-Ui6" firstAttribute="trailing" secondItem="Orm-xy-cD7" secondAttribute="trailing" id="A4j-Z5-FZg"/>
                             <constraint firstItem="ofw-Sg-opW" firstAttribute="centerY" secondItem="AIk-jd-Emh" secondAttribute="centerY" id="D6E-Yh-ONC"/>
-                            <constraint firstItem="ofw-Sg-opW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AIk-jd-Emh" secondAttribute="trailing" constant="8" symbolic="YES" id="Dqz-xi-j71"/>
                             <constraint firstItem="Wu5-kn-KiU" firstAttribute="centerX" secondItem="IXw-O1-9A9" secondAttribute="centerX" id="Dw9-3x-RcA"/>
+                            <constraint firstItem="ofw-Sg-opW" firstAttribute="leading" secondItem="AIk-jd-Emh" secondAttribute="trailing" constant="11" id="PHG-zz-bTT"/>
                             <constraint firstItem="Wu5-kn-KiU" firstAttribute="top" secondItem="oWw-F0-N0R" secondAttribute="bottom" constant="23" id="QRb-hd-Jmi"/>
                             <constraint firstItem="URu-uy-6R4" firstAttribute="top" secondItem="RVU-uS-WEs" secondAttribute="bottom" constant="17" id="RFD-91-yvW"/>
                             <constraint firstItem="RVU-uS-WEs" firstAttribute="leading" secondItem="3EO-fO-gxW" secondAttribute="leading" constant="22" id="TPA-yU-i5G"/>
@@ -329,8 +349,8 @@
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
         <image name="googleLogo" width="118" height="40"/>
         <image name="square" catalog="system" width="128" height="114"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Blue">
+            <color red="0.25882352941176473" green="0.52156862745098043" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="LightGray">
             <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
