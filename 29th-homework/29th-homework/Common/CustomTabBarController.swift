@@ -15,19 +15,19 @@ class CustomTabBarController: UITabBarController {
     }
     
     func setTabBar() {
-        guard let redVC = self.storyboard?.instantiateViewController(withIdentifier: "redVC"),
-              let orangeVC = self.storyboard?.instantiateViewController(withIdentifier: "orangeVC"),
-              let yellowVC = self.storyboard?.instantiateViewController(withIdentifier: "yellowVC"),
-              let greenVC = self.storyboard?.instantiateViewController(withIdentifier: "greenVC"),
-              let blueVC = self.storyboard?.instantiateViewController(withIdentifier: "blueVC")
+        guard let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC"),
+              let shortsVC = self.storyboard?.instantiateViewController(withIdentifier: "ShortsVC"),
+              let addVC = self.storyboard?.instantiateViewController(withIdentifier: "AddVC"),
+              let subVC = self.storyboard?.instantiateViewController(withIdentifier: "SubVC"),
+              let libraryVC = self.storyboard?.instantiateViewController(withIdentifier: "LibraryVC")
         else { return }
         
-        redVC.tabBarItem.title = "Home"
-        redVC.tabBarItem.image = UIImage(systemName: "house")
-        redVC.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
-        orangeVC.tabBarItem.title = "Profile"
-        orangeVC.tabBarItem.image = UIImage(systemName: "person")
-        orangeVC.tabBarItem.selectedImage = UIImage(systemName: "person.fill")
+        homeVC.tabBarItem.title = "Home"
+        homeVC.tabBarItem.image = UIImage(systemName: "house")
+        homeVC.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
+        shortsVC.tabBarItem.title = "Profile"
+        shortsVC.tabBarItem.image = UIImage(systemName: "person")
+        shortsVC.tabBarItem.selectedImage = UIImage(systemName: "person.fill")
         
         setViewControllers([redVC, orangeVC, yellowVC, greenVC, blueVC], animated: true)
     }

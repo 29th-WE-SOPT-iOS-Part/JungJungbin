@@ -24,6 +24,11 @@
 		5CEF1D33272259850068918E /* AddVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEF1D32272259850068918E /* AddVC.storyboard */; };
 		5CEF1D352722598B0068918E /* SubVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEF1D342722598B0068918E /* SubVC.storyboard */; };
 		5CEF1D37272259A50068918E /* LibraryVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CEF1D36272259A50068918E /* LibraryVC.storyboard */; };
+		5CEF1D39272259D00068918E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D38272259D00068918E /* HomeVC.swift */; };
+		5CEF1D3B272259ED0068918E /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D3A272259ED0068918E /* ShortsVC.swift */; };
+		5CEF1D3D272259EE0068918E /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D3C272259EE0068918E /* AddVC.swift */; };
+		5CEF1D3F272259EF0068918E /* SubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D3E272259EF0068918E /* SubVC.swift */; };
+		5CEF1D41272259F00068918E /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D40272259F00068918E /* LibraryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		5CEF1D32272259850068918E /* AddVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddVC.storyboard; sourceTree = "<group>"; };
 		5CEF1D342722598B0068918E /* SubVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubVC.storyboard; sourceTree = "<group>"; };
 		5CEF1D36272259A50068918E /* LibraryVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LibraryVC.storyboard; sourceTree = "<group>"; };
+		5CEF1D38272259D00068918E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5CEF1D3A272259ED0068918E /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
+		5CEF1D3C272259EE0068918E /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		5CEF1D3E272259EF0068918E /* SubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubVC.swift; sourceTree = "<group>"; };
+		5CEF1D40272259F00068918E /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,11 @@
 			children = (
 				5CEF1D282721B7040068918E /* LoginTextField.swift */,
 				5CEF1D2C2722584D0068918E /* CustomTabBarController.swift */,
+				5CEF1D38272259D00068918E /* HomeVC.swift */,
+				5CEF1D3A272259ED0068918E /* ShortsVC.swift */,
+				5CEF1D3C272259EE0068918E /* AddVC.swift */,
+				5CEF1D3E272259EF0068918E /* SubVC.swift */,
+				5CEF1D40272259F00068918E /* LibraryVC.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -218,9 +233,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC39AF82709B55500FBB37B /* SignUpVC.swift in Sources */,
+				5CEF1D41272259F00068918E /* LibraryVC.swift in Sources */,
 				5CC39AE82709B32E00FBB37B /* SignInVC.swift in Sources */,
+				5CEF1D3F272259EF0068918E /* SubVC.swift in Sources */,
 				5CEF1D2D2722584D0068918E /* CustomTabBarController.swift in Sources */,
+				5CEF1D39272259D00068918E /* HomeVC.swift in Sources */,
 				5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */,
+				5CEF1D3B272259ED0068918E /* ShortsVC.swift in Sources */,
+				5CEF1D3D272259EE0068918E /* AddVC.swift in Sources */,
 				5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
 				5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */,

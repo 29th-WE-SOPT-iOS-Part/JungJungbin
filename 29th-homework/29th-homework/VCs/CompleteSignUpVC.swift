@@ -27,6 +27,11 @@ class CompleteVC: UIViewController {
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapOKBtn(_ sender: Any) {
+        guard let nextTabBar = UIStoryboard(name: "TabBarHome", bundle: nil).instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController else { return }
+        nextTabBar.modalPresentationStyle = .fullScreen
+        self.present(nextTabBar, animated: true, completion: nil)
+        
+        
     }
     
 }
