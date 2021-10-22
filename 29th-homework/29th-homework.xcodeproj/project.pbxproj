@@ -16,6 +16,7 @@
 		5CC39AF02709B33100FBB37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC39AEE2709B33100FBB37B /* LaunchScreen.storyboard */; };
 		5CC39AF82709B55500FBB37B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AF72709B55500FBB37B /* SignUpVC.swift */; };
 		5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AF92709B58100FBB37B /* CompleteSignUpVC.swift */; };
+		5CEF1D292721B7040068918E /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D282721B7040068918E /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5CC39AF12709B33100FBB37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CC39AF72709B55500FBB37B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5CC39AF92709B58100FBB37B /* CompleteSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpVC.swift; sourceTree = "<group>"; };
+		5CEF1D282721B7040068918E /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		5CC39AE22709B32E00FBB37B /* 29th-homework */ = {
 			isa = PBXGroup;
 			children = (
+				5CEF1D272721B6EA0068918E /* Common */,
 				5C8FAD8E272052E700E35816 /* VCs */,
 				5C8FAD8D272052CF00E35816 /* Storyboards */,
 				5C8FAD8C272052A900E35816 /* Resources */,
@@ -106,6 +109,14 @@
 				5CC39AF12709B33100FBB37B /* Info.plist */,
 			);
 			path = "29th-homework";
+			sourceTree = "<group>";
+		};
+		5CEF1D272721B6EA0068918E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5CEF1D282721B7040068918E /* LoginTextField.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
 				5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */,
+				5CEF1D292721B7040068918E /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

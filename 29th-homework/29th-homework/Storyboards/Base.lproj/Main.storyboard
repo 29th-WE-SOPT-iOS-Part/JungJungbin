@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uOE-nm-cdg">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -19,60 +19,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEN-Ce-eDM">
-                                <rect key="frame" x="141" y="145" width="133" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rE-Pj-yXz">
-                                <rect key="frame" x="173" y="205" width="68" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rE-Pj-yXz">
+                                <rect key="frame" x="173" y="217" width="68" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Youtube도 이동하며 계속하세요. 앱 및 Safari에서도 Google 서비스에 로그인됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if4-bk-mUk">
-                                <rect key="frame" x="40" y="258" width="335" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if4-bk-mUk">
+                                <rect key="frame" x="44" y="263" width="326" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="zTp-sc-N3M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름을 입력해 주세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="suN-DL-I7b">
-                                <rect key="frame" x="40" y="355" width="335" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름을 입력해 주세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="suN-DL-I7b" customClass="LoginTextField" customModule="_9th_homework" customModuleProvider="target">
+                                <rect key="frame" x="22" y="377" width="370" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="cQq-nO-PAd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 또는 휴대전화" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDN-bR-mE8">
-                                <rect key="frame" x="40" y="423" width="335" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일 또는 휴대전화" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDN-bR-mE8" customClass="LoginTextField" customModule="_9th_homework" customModuleProvider="target">
+                                <rect key="frame" x="22" y="442" width="370" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6l6-dH-Fxe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ro0-aD-3eT">
-                                <rect key="frame" x="40" y="496" width="335" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 입력" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ro0-aD-3eT" customClass="LoginTextField" customModule="_9th_homework" customModuleProvider="target">
+                                <rect key="frame" x="22" y="507" width="370" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="12s-P7-RFw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyG-BV-8Y2">
-                                <rect key="frame" x="40" y="618" width="116" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="계정 만들기">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="tapNewAccountBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZN-pV-LVl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-rd-bLE">
-                                <rect key="frame" x="286" y="610" width="89" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-rd-bLE">
+                                <rect key="frame" x="318" y="619" width="74" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="QLJ-7N-Vzx"/>
+                                    <constraint firstAttribute="height" constant="42" id="YoL-4J-fzn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="다음">
@@ -82,13 +74,56 @@
                                     <action selector="tapNextBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEE-x2-ha6"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UIq-6f-owe">
+                                <rect key="frame" x="148" y="154" width="118" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="blq-xK-dKv"/>
+                                    <constraint firstAttribute="height" constant="40" id="egJ-fz-MxS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyG-BV-8Y2">
+                                <rect key="frame" x="22" y="619" width="74" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="mXW-6d-7oB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="계정 만들기"/>
+                                <connections>
+                                    <action selector="tapNewAccountBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZN-pV-LVl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ro0-aD-3eT" firstAttribute="top" secondItem="RDN-bR-mE8" secondAttribute="bottom" constant="17" id="3Sh-2X-jTt"/>
+                            <constraint firstItem="ro0-aD-3eT" firstAttribute="trailing" secondItem="suN-DL-I7b" secondAttribute="trailing" id="48r-nj-JaN"/>
+                            <constraint firstItem="if4-bk-mUk" firstAttribute="top" secondItem="8rE-Pj-yXz" secondAttribute="bottom" constant="14" id="4Cj-ip-WeV"/>
+                            <constraint firstItem="RDN-bR-mE8" firstAttribute="trailing" secondItem="suN-DL-I7b" secondAttribute="trailing" id="5fx-4e-asw"/>
+                            <constraint firstItem="XyG-BV-8Y2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="6Vq-NT-hD5"/>
+                            <constraint firstItem="8rE-Pj-yXz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="81y-Rv-1E5"/>
+                            <constraint firstItem="XyG-BV-8Y2" firstAttribute="height" secondItem="Orp-rd-bLE" secondAttribute="height" id="DCV-EP-Zal"/>
+                            <constraint firstItem="suN-DL-I7b" firstAttribute="top" secondItem="if4-bk-mUk" secondAttribute="bottom" constant="68" id="DbI-6y-Hb7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Orp-rd-bLE" secondAttribute="trailing" constant="22" id="F00-pT-9J6"/>
+                            <constraint firstItem="if4-bk-mUk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="MAT-2P-CVy"/>
+                            <constraint firstItem="RDN-bR-mE8" firstAttribute="top" secondItem="suN-DL-I7b" secondAttribute="bottom" constant="17" id="NMx-AT-Eo1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="if4-bk-mUk" secondAttribute="trailing" constant="44" id="TKG-VM-3Iv"/>
+                            <constraint firstItem="suN-DL-I7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="VuX-on-hdg"/>
+                            <constraint firstItem="RDN-bR-mE8" firstAttribute="leading" secondItem="suN-DL-I7b" secondAttribute="leading" id="Vyz-TJ-ZNi"/>
+                            <constraint firstItem="XyG-BV-8Y2" firstAttribute="centerY" secondItem="Orp-rd-bLE" secondAttribute="centerY" id="Ywa-cS-IdF"/>
+                            <constraint firstItem="Orp-rd-bLE" firstAttribute="top" secondItem="ro0-aD-3eT" secondAttribute="bottom" constant="64" id="bID-Gp-UU3"/>
+                            <constraint firstItem="8rE-Pj-yXz" firstAttribute="top" secondItem="UIq-6f-owe" secondAttribute="bottom" constant="23" id="dvz-ok-UUB"/>
+                            <constraint firstItem="UIq-6f-owe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqt-qV-oF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="suN-DL-I7b" secondAttribute="trailing" constant="22" id="qRs-G5-W1I"/>
+                            <constraint firstItem="ro0-aD-3eT" firstAttribute="leading" secondItem="suN-DL-I7b" secondAttribute="leading" id="r98-Y6-dBu"/>
+                            <constraint firstItem="UIq-6f-owe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="xH4-xz-BPV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sdg-cf-jh7"/>
                     <connections>
                         <outlet property="emailTextField" destination="RDN-bR-mE8" id="qlk-6C-YZ3"/>
+                        <outlet property="infoLabel" destination="if4-bk-mUk" id="ABT-3i-suN"/>
                         <outlet property="nameTextField" destination="suN-DL-I7b" id="et5-UX-Hhr"/>
                         <outlet property="newAccountBtn" destination="XyG-BV-8Y2" id="M7n-FN-Mpa"/>
                         <outlet property="nextBtn" destination="Orp-rd-bLE" id="BSY-Ea-nX8"/>
@@ -256,6 +291,7 @@
     </scenes>
     <resources>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="googleLogo" width="118" height="40"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

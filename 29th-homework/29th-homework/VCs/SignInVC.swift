@@ -8,12 +8,14 @@
 import UIKit
 
 class SignInVC: UIViewController {
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var nameTextField: LoginTextField!
+    @IBOutlet weak var emailTextField: LoginTextField!
+    @IBOutlet weak var pwTextField: LoginTextField!
     @IBOutlet weak var newAccountBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
-    
+    let commonInsets = UIEdgeInsets(top: 12, left: 14, bottom: 12, right: 14)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
@@ -36,14 +38,20 @@ class SignInVC: UIViewController {
     }
     
     private func setUpUI() {
+        infoLabel.text = "Youtube도 이동하며 계속하세요.\n앱 및 Safari에서도 Google 서비스에 로그인됩니다."
         nextBtn.isEnabled = false
         nextBtn.titleLabel?.textColor = .white
         nextBtn.backgroundColor = .gray
-        nextBtn.layer.cornerRadius = nextBtn.frame.height / 4
+        nextBtn.layer.cornerRadius = nextBtn.frame.height / 10.5
+        [nameTextField, pwTextField, emailTextField].forEach {
+            $0?.layer.borderWidth = 1
+            $0?.layer.borderColor = UIColor.LightGray.cgColor
+            $0?.layer.cornerRadius = nameTextField.frame.height / 6
+            $0?.setPaddingLR(14.0)
+            $0?.delegate = self
+        }
         
-        nameTextField.delegate = self
-        emailTextField.delegate = self
-        pwTextField.delegate = self
+        
     }
 }
 
