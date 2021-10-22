@@ -102,6 +102,11 @@
 				5CC39AE72709B32E00FBB37B /* SignInVC.swift */,
 				5CC39AF72709B55500FBB37B /* SignUpVC.swift */,
 				5CC39AF92709B58100FBB37B /* CompleteSignUpVC.swift */,
+				5CEF1D38272259D00068918E /* HomeVC.swift */,
+				5CEF1D3C272259EE0068918E /* AddVC.swift */,
+				5CEF1D3A272259ED0068918E /* ShortsVC.swift */,
+				5CEF1D3E272259EF0068918E /* SubVC.swift */,
+				5CEF1D40272259F00068918E /* LibraryVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -149,11 +154,6 @@
 			children = (
 				5CEF1D282721B7040068918E /* LoginTextField.swift */,
 				5CEF1D2C2722584D0068918E /* CustomTabBarController.swift */,
-				5CEF1D38272259D00068918E /* HomeVC.swift */,
-				5CEF1D3A272259ED0068918E /* ShortsVC.swift */,
-				5CEF1D3C272259EE0068918E /* AddVC.swift */,
-				5CEF1D3E272259EF0068918E /* SubVC.swift */,
-				5CEF1D40272259F00068918E /* LibraryVC.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
