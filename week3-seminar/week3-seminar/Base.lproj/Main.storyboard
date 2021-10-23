@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Dp-JK-xeV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -61,8 +61,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="UZz-lg-SMP" firstAttribute="height" secondItem="Igk-mI-REl" secondAttribute="height" priority="250" id="2AS-RY-H5q"/>
-                                    <constraint firstItem="UZz-lg-SMP" firstAttribute="trailing" secondItem="P87-tJ-iRS" secondAttribute="trailing" constant="354" id="GaQ-5w-aq5"/>
-                                    <constraint firstItem="UZz-lg-SMP" firstAttribute="bottom" secondItem="P87-tJ-iRS" secondAttribute="bottom" constant="1373" id="Gfa-od-PtS"/>
+                                    <constraint firstItem="UZz-lg-SMP" firstAttribute="bottom" secondItem="P87-tJ-iRS" secondAttribute="bottom" id="8sc-cp-GOd"/>
+                                    <constraint firstItem="UZz-lg-SMP" firstAttribute="trailing" secondItem="P87-tJ-iRS" secondAttribute="trailing" id="GaQ-5w-aq5"/>
                                     <constraint firstItem="UZz-lg-SMP" firstAttribute="width" secondItem="Igk-mI-REl" secondAttribute="width" id="rFg-nc-02b"/>
                                     <constraint firstItem="UZz-lg-SMP" firstAttribute="top" secondItem="P87-tJ-iRS" secondAttribute="top" id="sar-u3-VyL"/>
                                     <constraint firstItem="UZz-lg-SMP" firstAttribute="leading" secondItem="P87-tJ-iRS" secondAttribute="leading" id="uEm-gT-VE6"/>
