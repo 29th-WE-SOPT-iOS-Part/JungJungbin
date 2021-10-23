@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RankingVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="RankingVC" customModule="week3_seminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="coc-2J-q1c">
+                                <rect key="frame" x="0.0" y="144" width="375" height="634"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="3NW-G6-uzp"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="rxc-5q-Vot"/>
+                                </connections>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8cf-fD-3pW">
+                                <rect key="frame" x="0.0" y="44" width="375" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QDU-cp-9gm"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="neX-jD-wM4">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RankCollectionViewCell" id="zFh-uC-jrD" customClass="RankCollectionViewCell" customModule="week3_seminar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="z4d-EG-0UT">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJy-3y-Tix">
+                                                    <rect key="frame" x="20" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="cJy-3y-Tix" secondAttribute="height" multiplier="1:1" id="8cL-Ow-Kap"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEn-xl-Ivu">
+                                                    <rect key="frame" x="29" y="75" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cJy-3y-Tix" firstAttribute="top" secondItem="z4d-EG-0UT" secondAttribute="top" constant="10" id="9VE-7o-2uk"/>
+                                                <constraint firstItem="EEn-xl-Ivu" firstAttribute="centerX" secondItem="cJy-3y-Tix" secondAttribute="centerX" id="MER-B5-0rF"/>
+                                                <constraint firstItem="cJy-3y-Tix" firstAttribute="leading" secondItem="z4d-EG-0UT" secondAttribute="leading" constant="20" id="k1w-DX-fdv"/>
+                                                <constraint firstAttribute="trailing" secondItem="cJy-3y-Tix" secondAttribute="trailing" constant="20" id="nje-XE-ize"/>
+                                                <constraint firstItem="EEn-xl-Ivu" firstAttribute="top" secondItem="cJy-3y-Tix" secondAttribute="bottom" constant="5" id="xxe-Tt-LsB"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="appIconImageView" destination="cJy-3y-Tix" id="E9N-ry-fo3"/>
+                                            <outlet property="appNameLabel" destination="EEn-xl-Ivu" id="zn8-HB-QXw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8cf-fD-3pW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="15r-dv-cAH"/>
+                            <constraint firstItem="8cf-fD-3pW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="1AA-y8-KrE"/>
+                            <constraint firstItem="coc-2J-q1c" firstAttribute="top" secondItem="8cf-fD-3pW" secondAttribute="bottom" id="COw-4h-qWn"/>
+                            <constraint firstItem="coc-2J-q1c" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bpV-jl-hRX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="coc-2J-q1c" secondAttribute="trailing" id="jmU-5O-40J"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="coc-2J-q1c" secondAttribute="bottom" id="rDd-l0-y11"/>
+                            <constraint firstItem="8cf-fD-3pW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yGa-yP-X0r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rankCollectionView" destination="8cf-fD-3pW" id="MoA-wC-aTL"/>
+                        <outlet property="rankTableView" destination="coc-2J-q1c" id="TQf-pF-jQE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.200000000000003" y="54.679802955665025"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

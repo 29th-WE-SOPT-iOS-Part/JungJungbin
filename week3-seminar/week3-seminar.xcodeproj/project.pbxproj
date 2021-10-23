@@ -15,6 +15,12 @@
 		5C1380652723D3EA00F3BA3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1380632723D3EA00F3BA3D /* LaunchScreen.storyboard */; };
 		5C13806D2723DAF800F3BA3D /* DelegatePracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13806C2723DAF800F3BA3D /* DelegatePracticeVC.swift */; };
 		5C1380702723DF4300F3BA3D /* PartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13806F2723DF4300F3BA3D /* PartDataModel.swift */; };
+		5C1380732723E83F00F3BA3D /* TableViewExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1380722723E83F00F3BA3D /* TableViewExample.storyboard */; };
+		5C1380752723E95000F3BA3D /* RankingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1380742723E95000F3BA3D /* RankingVC.swift */; };
+		5C1380782723EA3A00F3BA3D /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1380762723EA3A00F3BA3D /* RankTableViewCell.swift */; };
+		5C1380792723EA3A00F3BA3D /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C1380772723EA3A00F3BA3D /* RankTableViewCell.xib */; };
+		5C13807B2723F1CE00F3BA3D /* AppContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13807A2723F1CE00F3BA3D /* AppContentDataModel.swift */; };
+		5C13807D2723FB5700F3BA3D /* RankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13807C2723FB5700F3BA3D /* RankCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		5C1380662723D3EA00F3BA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C13806C2723DAF800F3BA3D /* DelegatePracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeVC.swift; sourceTree = "<group>"; };
 		5C13806F2723DF4300F3BA3D /* PartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartDataModel.swift; sourceTree = "<group>"; };
+		5C1380722723E83F00F3BA3D /* TableViewExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewExample.storyboard; sourceTree = "<group>"; };
+		5C1380742723E95000F3BA3D /* RankingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingVC.swift; sourceTree = "<group>"; };
+		5C1380762723EA3A00F3BA3D /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		5C1380772723EA3A00F3BA3D /* RankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
+		5C13807A2723F1CE00F3BA3D /* AppContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentDataModel.swift; sourceTree = "<group>"; };
+		5C13807C2723FB5700F3BA3D /* RankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,9 @@
 				5C1380612723D3EA00F3BA3D /* Assets.xcassets */,
 				5C1380632723D3EA00F3BA3D /* LaunchScreen.storyboard */,
 				5C1380662723D3EA00F3BA3D /* Info.plist */,
+				5C1380722723E83F00F3BA3D /* TableViewExample.storyboard */,
+				5C13807A2723F1CE00F3BA3D /* AppContentDataModel.swift */,
+				5C13807C2723FB5700F3BA3D /* RankCollectionViewCell.swift */,
 			);
 			path = "week3-seminar";
 			sourceTree = "<group>";
@@ -77,6 +92,9 @@
 			children = (
 				5C13806C2723DAF800F3BA3D /* DelegatePracticeVC.swift */,
 				5C13805C2723D3E700F3BA3D /* ViewController.swift */,
+				5C1380742723E95000F3BA3D /* RankingVC.swift */,
+				5C1380762723EA3A00F3BA3D /* RankTableViewCell.swift */,
+				5C1380772723EA3A00F3BA3D /* RankTableViewCell.xib */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -148,7 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1380652723D3EA00F3BA3D /* LaunchScreen.storyboard in Resources */,
+				5C1380732723E83F00F3BA3D /* TableViewExample.storyboard in Resources */,
 				5C1380622723D3EA00F3BA3D /* Assets.xcassets in Resources */,
+				5C1380792723EA3A00F3BA3D /* RankTableViewCell.xib in Resources */,
 				5C1380602723D3E700F3BA3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +183,10 @@
 				5C13805D2723D3E700F3BA3D /* ViewController.swift in Sources */,
 				5C1380592723D3E700F3BA3D /* AppDelegate.swift in Sources */,
 				5C13806D2723DAF800F3BA3D /* DelegatePracticeVC.swift in Sources */,
+				5C13807D2723FB5700F3BA3D /* RankCollectionViewCell.swift in Sources */,
+				5C13807B2723F1CE00F3BA3D /* AppContentDataModel.swift in Sources */,
+				5C1380782723EA3A00F3BA3D /* RankTableViewCell.swift in Sources */,
+				5C1380752723E95000F3BA3D /* RankingVC.swift in Sources */,
 				5C1380702723DF4300F3BA3D /* PartDataModel.swift in Sources */,
 				5C13805B2723D3E700F3BA3D /* SceneDelegate.swift in Sources */,
 			);
