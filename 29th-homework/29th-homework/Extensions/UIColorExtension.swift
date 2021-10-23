@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    static let Blue = UIColor(named: "blue")!
+    static let Blue = UIColor(named: "Blue")!
+    static let LightGray = UIColor(named: "LightGray")!
 }
