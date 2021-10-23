@@ -13,6 +13,7 @@
 		5C1380602723D3E700F3BA3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C13805E2723D3E700F3BA3D /* Main.storyboard */; };
 		5C1380622723D3EA00F3BA3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1380612723D3EA00F3BA3D /* Assets.xcassets */; };
 		5C1380652723D3EA00F3BA3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1380632723D3EA00F3BA3D /* LaunchScreen.storyboard */; };
+		5C13806D2723DAF800F3BA3D /* DelegatePracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13806C2723DAF800F3BA3D /* DelegatePracticeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5C1380612723D3EA00F3BA3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C1380642723D3EA00F3BA3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C1380662723D3EA00F3BA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C13806C2723DAF800F3BA3D /* DelegatePracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		5C1380572723D3E700F3BA3D /* week3-seminar */ = {
 			isa = PBXGroup;
 			children = (
+				5C13806E2723DB1200F3BA3D /* VCs */,
 				5C1380582723D3E700F3BA3D /* AppDelegate.swift */,
 				5C13805A2723D3E700F3BA3D /* SceneDelegate.swift */,
-				5C13805C2723D3E700F3BA3D /* ViewController.swift */,
 				5C13805E2723D3E700F3BA3D /* Main.storyboard */,
 				5C1380612723D3EA00F3BA3D /* Assets.xcassets */,
 				5C1380632723D3EA00F3BA3D /* LaunchScreen.storyboard */,
 				5C1380662723D3EA00F3BA3D /* Info.plist */,
 			);
 			path = "week3-seminar";
+			sourceTree = "<group>";
+		};
+		5C13806E2723DB1200F3BA3D /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				5C13806C2723DAF800F3BA3D /* DelegatePracticeVC.swift */,
+				5C13805C2723D3E700F3BA3D /* ViewController.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				5C13805D2723D3E700F3BA3D /* ViewController.swift in Sources */,
 				5C1380592723D3E700F3BA3D /* AppDelegate.swift in Sources */,
+				5C13806D2723DAF800F3BA3D /* DelegatePracticeVC.swift in Sources */,
 				5C13805B2723D3E700F3BA3D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

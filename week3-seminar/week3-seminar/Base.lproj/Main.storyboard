@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="286.94196428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Delegate PracticeVC-->
         <scene sceneID="qpn-H6-qir">
             <objects>
-                <viewController id="9Dp-JK-xeV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DelegatePracticeVC" id="9Dp-JK-xeV" customClass="DelegatePracticeVC" customModule="week3_seminar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PAC-VW-wOO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,19 +99,55 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0OX-1I-aKx">
+                                <rect key="frame" x="30" y="158" width="354" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0OX-1I-aKx" secondAttribute="height" multiplier="1:1" id="ZhR-I7-bOG"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nt-Ar-bgM">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0GI-4S-T4L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0OX-1I-aKx" firstAttribute="leading" secondItem="0GI-4S-T4L" secondAttribute="leading" constant="30" id="0JQ-4c-3ar"/>
+                            <constraint firstItem="0nt-Ar-bgM" firstAttribute="leading" secondItem="0GI-4S-T4L" secondAttribute="leading" id="39t-Ae-WEZ"/>
+                            <constraint firstItem="0OX-1I-aKx" firstAttribute="width" secondItem="0OX-1I-aKx" secondAttribute="height" multiplier="1:1" id="6kG-vQ-O4i"/>
+                            <constraint firstItem="0nt-Ar-bgM" firstAttribute="trailing" secondItem="0GI-4S-T4L" secondAttribute="trailing" id="8tQ-3A-Feo"/>
                             <constraint firstItem="0GI-4S-T4L" firstAttribute="trailing" secondItem="ydT-GD-84v" secondAttribute="trailing" constant="20" id="C1R-XD-1oO"/>
                             <constraint firstItem="ydT-GD-84v" firstAttribute="leading" secondItem="0GI-4S-T4L" secondAttribute="leading" constant="20" id="EI6-cN-QVM"/>
+                            <constraint firstItem="0GI-4S-T4L" firstAttribute="bottom" secondItem="0nt-Ar-bgM" secondAttribute="bottom" id="OSa-Ax-wBL"/>
                             <constraint firstItem="ydT-GD-84v" firstAttribute="top" secondItem="0GI-4S-T4L" secondAttribute="top" constant="50" id="OhG-d8-uuQ"/>
+                            <constraint firstItem="0OX-1I-aKx" firstAttribute="top" secondItem="ydT-GD-84v" secondAttribute="bottom" constant="30" id="RHV-Tc-eW6"/>
+                            <constraint firstItem="0GI-4S-T4L" firstAttribute="trailing" secondItem="0OX-1I-aKx" secondAttribute="trailing" constant="30" id="h6P-BY-eIo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="partImageView" destination="0OX-1I-aKx" id="hhR-eK-7FE"/>
+                        <outlet property="partPickerView" destination="0nt-Ar-bgM" id="Gmg-Co-4hB"/>
+                        <outlet property="textField" destination="ydT-GD-84v" id="LAy-Wf-BSg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufg-5k-gv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986" y="81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wy4-0b-0aH">
+            <objects>
+                <viewController id="IUL-GA-Jad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ies-0G-Qnw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uWF-sF-4YQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kp7-tm-J00" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671.0144927536232" y="80.357142857142847"/>
         </scene>
     </scenes>
     <resources>
