@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,22 +19,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d28-ef-F6t">
-                                <rect key="frame" x="0.0" y="44" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d28-ef-F6t">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="youtubeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-sA-UiW">
-                                        <rect key="frame" x="8" y="8" width="88" height="47"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtubeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-sA-UiW">
+                                        <rect key="frame" x="16" y="11" width="96" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tzV-sA-UiW" secondAttribute="height" multiplier="96:20" id="HWX-8B-OtM"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW8-Mg-f9e">
-                                        <rect key="frame" x="323" y="21" width="24" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW8-Mg-f9e">
+                                        <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kW8-Mg-f9e" secondAttribute="height" multiplier="1:1" id="79k-Kg-ZNe"/>
+                                        </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="wesoptProfile"/>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-tv-u5i">
-                                        <rect key="frame" x="182" y="17" width="121" height="32"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-tv-u5i">
+                                        <rect key="frame" x="197" y="6" width="121" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGH-AL-hJi">
                                                 <rect key="frame" x="0.0" y="0.0" width="32.333333333333336" height="32"/>
@@ -41,12 +45,12 @@
                                                 <state key="normal" image="windowSharingIcon"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7A-3F-lyX">
-                                                <rect key="frame" x="44.333333333333329" y="0.0" width="32.333333333333329" height="32"/>
+                                                <rect key="frame" x="44.333333333333343" y="0.0" width="32.333333333333343" height="32"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="notificationIcon"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqp-Mn-cUi">
-                                                <rect key="frame" x="88.666666666666671" y="0.0" width="32.333333333333329" height="32"/>
+                                                <rect key="frame" x="88.666666666666686" y="0.0" width="32.333333333333343" height="32"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="SearchIcon"/>
                                             </button>
@@ -54,6 +58,18 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kW8-Mg-f9e" secondAttribute="trailing" constant="16" id="0N4-Zx-FC5"/>
+                                    <constraint firstItem="kW8-Mg-f9e" firstAttribute="leading" secondItem="Jbw-tv-u5i" secondAttribute="trailing" constant="17" id="3mi-rm-U55"/>
+                                    <constraint firstAttribute="height" constant="44" id="C1N-wV-IWY"/>
+                                    <constraint firstItem="kW8-Mg-f9e" firstAttribute="centerY" secondItem="d28-ef-F6t" secondAttribute="centerY" id="EUh-4I-h5l"/>
+                                    <constraint firstAttribute="bottom" secondItem="tzV-sA-UiW" secondAttribute="bottom" constant="13" id="S4b-m8-32b"/>
+                                    <constraint firstItem="kW8-Mg-f9e" firstAttribute="top" secondItem="d28-ef-F6t" secondAttribute="top" constant="10" id="S5r-kf-xg1"/>
+                                    <constraint firstItem="tzV-sA-UiW" firstAttribute="top" secondItem="d28-ef-F6t" secondAttribute="top" constant="11" id="T9b-55-WDk"/>
+                                    <constraint firstItem="Jbw-tv-u5i" firstAttribute="centerY" secondItem="d28-ef-F6t" secondAttribute="centerY" id="h39-pd-rNY"/>
+                                    <constraint firstAttribute="bottom" secondItem="kW8-Mg-f9e" secondAttribute="bottom" constant="10" id="umb-Ug-aPq"/>
+                                    <constraint firstItem="tzV-sA-UiW" firstAttribute="leading" secondItem="d28-ef-F6t" secondAttribute="leading" constant="16" id="vPR-pP-gGx"/>
+                                </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="56k-TA-uYH">
                                 <rect key="frame" x="0.0" y="118" width="375" height="77"/>
@@ -123,6 +139,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" name="BtnBGGray"/>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="79" height="29"/>
                                     </collectionViewCell>
@@ -131,6 +148,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d28-ef-F6t" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3Cq-kp-kTO"/>
+                            <constraint firstItem="d28-ef-F6t" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Mhv-on-0wa"/>
+                            <constraint firstItem="d28-ef-F6t" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="xFf-ND-U6P"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -144,6 +166,9 @@
         <image name="wesoptProfile" width="36" height="36"/>
         <image name="windowSharingIcon" width="32.333332061767578" height="32"/>
         <image name="youtubeLogo" width="96.333335876464844" height="20"/>
+        <namedColor name="BtnBGGray">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
