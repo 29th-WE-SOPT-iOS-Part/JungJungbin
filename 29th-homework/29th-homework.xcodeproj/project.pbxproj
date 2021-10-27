@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FAD8A2720484300E35816 /* UIColorExtension.swift */; };
+		5CBBD3462728E5F0000CF8E2 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBBD3442728E5F0000CF8E2 /* VideoTableViewCell.swift */; };
+		5CBBD3472728E5F0000CF8E2 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CBBD3452728E5F0000CF8E2 /* VideoTableViewCell.xib */; };
 		5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE32709B32E00FBB37B /* AppDelegate.swift */; };
 		5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */; };
 		5CC39AE82709B32E00FBB37B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC39AE72709B32E00FBB37B /* SignInVC.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		5C8FAD8A2720484300E35816 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		5CBBD3442728E5F0000CF8E2 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		5CBBD3452728E5F0000CF8E2 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		5CC39AE02709B32E00FBB37B /* 29th-homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "29th-homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC39AE32709B32E00FBB37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC39AE52709B32E00FBB37B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				5C8FAD8C272052A900E35816 /* Resources */,
 				5CC0E2812720440A00A07CB1 /* Extensions */,
 				5CC39AF12709B33100FBB37B /* Info.plist */,
+				5CBBD3442728E5F0000CF8E2 /* VideoTableViewCell.swift */,
+				5CBBD3452728E5F0000CF8E2 /* VideoTableViewCell.xib */,
 			);
 			path = "29th-homework";
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				5CC39AF02709B33100FBB37B /* LaunchScreen.storyboard in Resources */,
 				5CEF1D2B272257800068918E /* TabBarHome.storyboard in Resources */,
 				5CEF1D352722598B0068918E /* SubVC.storyboard in Resources */,
+				5CBBD3472728E5F0000CF8E2 /* VideoTableViewCell.xib in Resources */,
 				5CEF1D312722597A0068918E /* ShortsVC.storyboard in Resources */,
 				5CC39AED2709B33100FBB37B /* Assets.xcassets in Resources */,
 				5CEF1D37272259A50068918E /* LibraryVC.storyboard in Resources */,
@@ -249,6 +256,7 @@
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
 				5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */,
 				5CEF1D292721B7040068918E /* LoginTextField.swift in Sources */,
+				5CBBD3462728E5F0000CF8E2 /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
