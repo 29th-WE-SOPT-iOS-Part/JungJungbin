@@ -11,11 +11,11 @@ import UIKit
 class ShortsCollectionViewCell: UICollectionViewCell {
     static let identifier = "ShortsCollectionViewCell"
     @IBOutlet weak var imgBtn: UIButton!
-    @IBOutlet weak var chanelLabel: UILabel!
+    @IBOutlet weak var channelLabel: UILabel!
     
-    func setData(chanelImage: UIImage, chanelName: String) {
-        imgBtn.setImage(chanelImage, for: .normal)
-        chanelLabel.text = chanelName
+    func setData(channelImage: UIImage, channelName: String) {
+        imgBtn.setImage(channelImage, for: .normal)
+        channelLabel.text = channelName
     }
 
 }

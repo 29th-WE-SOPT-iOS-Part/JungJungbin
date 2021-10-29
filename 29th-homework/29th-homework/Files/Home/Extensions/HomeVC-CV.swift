@@ -20,7 +20,7 @@ extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == shortsCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ShortsCollectionViewCell.identifier, for: indexPath) as? ShortsCollectionViewCell else { return UICollectionViewCell() }
-            cell.setData(chanelImage: sampleShortsData[indexPath.row].chanelImage, chanelName: sampleShortsData[indexPath.row].chanelName)
+            cell.setData(channelImage: sampleShortsData[indexPath.row].channelImage, channelName: sampleShortsData[indexPath.row].channelName)
             cell.imgBtn.layer.cornerRadius = cell.imgBtn.frame.height / 2
             
             return cell
