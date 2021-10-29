@@ -35,6 +35,7 @@
 		5CEF1D41272259F00068918E /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D40272259F00068918E /* LibraryVC.swift */; };
 		5CEF1D4327225CD60068918E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEF1D4227225CD60068918E /* UIImageExtension.swift */; };
 		5CF4F571272BF8B5001E483B /* HomeVC-TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF4F570272BF8B5001E483B /* HomeVC-TV.swift */; };
+		5CF4F573272C12EE001E483B /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF4F572272C12EE001E483B /* TagCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		5CEF1D40272259F00068918E /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
 		5CEF1D4227225CD60068918E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		5CF4F570272BF8B5001E483B /* HomeVC-TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC-TV.swift"; sourceTree = "<group>"; };
+		5CF4F572272C12EE001E483B /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				5CBBD3442728E5F0000CF8E2 /* VideoTableViewCell.swift */,
 				5CBBD3452728E5F0000CF8E2 /* VideoTableViewCell.xib */,
 				5CBBD34827294A7B000CF8E2 /* ShortsCollectionViewCell.swift */,
+				5CF4F572272C12EE001E483B /* TagCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				5CEF1D3B272259ED0068918E /* ShortsVC.swift in Sources */,
 				5CEF1D3D272259EE0068918E /* AddVC.swift in Sources */,
 				5CEF1D4327225CD60068918E /* UIImageExtension.swift in Sources */,
+				5CF4F573272C12EE001E483B /* TagCollectionViewCell.swift in Sources */,
 				5CC39AFA2709B58100FBB37B /* CompleteSignUpVC.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
 				5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */,

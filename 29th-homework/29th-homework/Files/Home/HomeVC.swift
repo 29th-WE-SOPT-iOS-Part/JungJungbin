@@ -26,6 +26,8 @@ class HomeVC: UIViewController {
         ShortsDataForm(chanelName: "PlanPart", chanelImage: UIImage(named: "ggamju1-5")!)
     ]
     
+    var sampleTagData: [String] = ["전체", "오늘", "이어서 시청하기", "시청하지 않음", "실시간", "게시물"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         videoTableView.delegate = self

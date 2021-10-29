@@ -12,5 +12,5 @@ extension UIColor {
     static let Blue = UIColor(named: "Blue")!
     static let LightGray = UIColor(named: "LightGray")!
     static let BtnBGGray = UIColor(named: "BtnBGGray")!
-    static let BtnStrokeGray = UIColor(named: "BtnStokeGray")!
+    static let BtnStrokeGray = UIColor(named: "BtnStrokeGray")!
 }

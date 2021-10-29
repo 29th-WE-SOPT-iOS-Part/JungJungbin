@@ -13,7 +13,7 @@ extension HomeVC: UICollectionViewDataSource {
         if collectionView == shortsCollectionView {
             return sampleShortsData.count
         } else { // collectionView == tagCollectionView
-            return 0
+            return sampleTagData.count
         }
     }
     
@@ -22,29 +22,60 @@ extension HomeVC: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ShortsCollectionViewCell.identifier, for: indexPath) as? ShortsCollectionViewCell else { return UICollectionViewCell() }
             cell.setData(chanelImage: sampleShortsData[indexPath.row].chanelImage, chanelName: sampleShortsData[indexPath.row].chanelName)
             cell.imgBtn.layer.cornerRadius = cell.imgBtn.frame.height / 2
+            
             return cell
+            
         } else { // collectionView == tagCollectionView
-            return UICollectionViewCell()
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TagCollectionViewCell.identifier, for: indexPath) as? TagCollectionViewCell else { return UICollectionViewCell() }
+            cell.setData(tagValue: sampleTagData[indexPath.row])
+            cell.contentView.layer.cornerRadius =  cell.contentView.frame.height / 2
+            cell.contentView.layer.borderWidth = 1
+            cell.contentView.layer.borderColor = UIColor(named: "BtnStrokeGray")!.cgColor
+            cell.contentView.backgroundColor = .BtnBGGray
+            return cell
         }
     }
     
     
+    
 }
+
 
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width / 5 - 4 // 5개는 완전히 보여 주되 6번째 셀은 살짝.. 보이게
-        let height = collectionView.frame.height
-        return CGSize(width: width, height: height)
+        if collectionView == shortsCollectionView {
+            let width = collectionView.frame.width / 5 - 4 // 5개는 완전히 보여 주되 6번째 셀은 살짝.. 보이게
+            let height = collectionView.frame.height
+            return CGSize(width: width, height: height)
+        } else { // collectionView == tagCollectionView
+            let width = sampleTagData[indexPath.row].size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)]).width + 29
+            let height = collectionView.frame.height * 0.6
+            return CGSize(width: width, height: height)
+        }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.zero
+        if collectionView == shortsCollectionView {
+            return UIEdgeInsets.zero
+        } else { // collectionView == tagCollectionView
+            return UIEdgeInsets(top: 0, left: 4.5, bottom: 0, right: 0)
+        }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        if collectionView == shortsCollectionView {
+            return 0
+        } else { // collectionView == tagCollectionView
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        if collectionView == shortsCollectionView {
+            return 0
+        } else { // collectionView == tagCollectionView
+            return 4.5
+        }
     }
+    
 }
+
+
