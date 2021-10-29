@@ -23,6 +23,11 @@ extension HomeVC: UICollectionViewDataSource {
             cell.setData(channelImage: sampleShortsData[indexPath.row].channelImage, channelName: sampleShortsData[indexPath.row].channelName)
             cell.imgBtn.layer.cornerRadius = cell.imgBtn.frame.height / 2
             
+            if indexPath.item == 0 {
+                cell.isSelected = true
+                collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .init())
+            }
+            
             return cell
             
         } else { // collectionView == tagCollectionView
@@ -31,7 +36,6 @@ extension HomeVC: UICollectionViewDataSource {
             cell.contentView.layer.cornerRadius =  cell.contentView.frame.height / 2
             cell.contentView.layer.borderWidth = 1
             cell.contentView.layer.borderColor = UIColor(named: "BtnStrokeGray")!.cgColor
-            cell.contentView.backgroundColor = .BtnBGGray
             return cell
         }
     }
@@ -75,7 +79,6 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
             return 4.5
         }
     }
-    
 }
 
 

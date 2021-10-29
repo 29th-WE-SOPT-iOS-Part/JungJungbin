@@ -54,7 +54,9 @@ class HomeVC: UIViewController {
         shortsCollectionView.dataSource = self
         tagCollectionView.delegate = self
         tagCollectionView.dataSource = self
+        
         videoTableView.separatorStyle = .none
+        tagCollectionView.allowsSelection = true
         registerXib()
     }
     
