@@ -10,14 +10,16 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var userTextLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func tapDoneBtn(_ sender: Any) {
         requestLogin()
+        getUserData()
     }
     
     func simpleAlert(title: String, message: String) {
@@ -50,4 +52,25 @@ extension ViewController {
             }
         }
     }
+    
+    func getUserData() {
+        UserSignService.shared.readUserData(userID: 2) { responseData in
+            switch responseData {
+            case .success(let loginResponse):
+                guard let response = loginResponse as? LoginResponseData else { return }
+                if let userData = response.data {
+                    self.userTextLabel.text = userData.name
+                }
+            case .requestErr(let msg):
+                print("requestERR \(msg)")
+            case .pathErr:
+                print("pathERR")
+            case .serverErr:
+                print("serverERR")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
+    }
 }
+

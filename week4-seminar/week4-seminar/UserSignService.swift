@@ -37,6 +37,27 @@ struct UserSignService {
         }
     }
     
+    func readUserData(userID: Int, completion: @escaping (NetworkResult<Any>) -> (Void)) {
+        let url = APIConstants.readUserURL + "\(userID)"
+        let header: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        let dataRequest = AF.request(url, method: .get, encoding: JSONEncoding.default, headers: header)
+        dataRequest.responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let value = response.value else { return }
+                let networkResult = self.judgeLoginStatus(by: statusCode, value)
+                completion(networkResult)
+            case .failure(let error):
+                print(error)
+                completion(.networkFail)
+            }
+        }
+    }
+    
     private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200: return isVaildLoginData(data: data)

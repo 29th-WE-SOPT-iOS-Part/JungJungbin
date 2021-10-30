@@ -51,6 +51,13 @@
                                     <action selector="tapDoneBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYp-4a-b3v"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTp-RQ-BZb">
+                                <rect key="frame" x="44" y="682" width="293" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -58,6 +65,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="1pv-uz-Hwm" id="XTC-yH-veO"/>
                         <outlet property="pwTextField" destination="IDr-ay-2zv" id="Nrt-6a-KFF"/>
+                        <outlet property="userTextLabel" destination="uTp-RQ-BZb" id="NHm-11-AYa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
