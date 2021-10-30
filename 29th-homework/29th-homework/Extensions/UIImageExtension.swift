@@ -22,4 +22,6 @@ extension UIImage {
     
     static let libraryIcon = UIImage(named: "LibraryIcon")!
     static let libraryIconFill = UIImage(named: "LibraryIconFill")!
+    
+    static let moreMenuIcon = UIImage(named: "moreMenuIcon")!
 }

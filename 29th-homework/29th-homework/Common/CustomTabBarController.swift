@@ -27,25 +27,6 @@ class CustomTabBarController: UITabBarController {
         setTabBarItem(addVC, title: "추가", image: .plusCircleIcon, selectedImage: .plusCircleIcon)
         setTabBarItem(subVC, title: "구독", image: .subscriptionsIcon, selectedImage: .subscriptionsIconFill)
         setTabBarItem(libraryVC, title: "보관함", image: .libraryIcon, selectedImage: .libraryIconFill)
-//        homeVC.tabBarItem.title = "홈"
-//        homeVC.tabBarItem.image = .homeIcon
-//        homeVC.tabBarItem.selectedImage = .homeIconFill
-//
-//        shortsVC.tabBarItem.title = "Shorts"
-//        shortsVC.tabBarItem.image = .shortsIcon
-//        shortsVC.tabBarItem.selectedImage = .shortsIconFill
-//
-//        addVC.tabBarItem.title = "추가"
-//        addVC.tabBarItem.image = .plusCircleIcon
-//        addVC.tabBarItem.selectedImage = .plusCircleIcon
-//
-//        subVC.tabBarItem.title = "구독"
-//        subVC.tabBarItem.image = .subscriptionsIcon
-//        subVC.tabBarItem.selectedImage = .subscriptionsIconFill
-//
-//        libraryVC.tabBarItem.title = "보관함"
-//        libraryVC.tabBarItem.image = .libraryIcon
-//        libraryVC.tabBarItem.selectedImage = .libraryIconFill
         
         setViewControllers([homeVC, shortsVC, addVC, subVC, libraryVC], animated: true)
     }
