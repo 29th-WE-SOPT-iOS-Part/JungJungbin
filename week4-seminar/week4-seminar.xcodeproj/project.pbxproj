@@ -14,6 +14,9 @@
 		5C5A2F8E272D1C6D00658D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5A2F8C272D1C6D00658D80 /* Main.storyboard */; };
 		5C5A2F90272D1C6F00658D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5A2F8F272D1C6F00658D80 /* Assets.xcassets */; };
 		5C5A2F93272D1C6F00658D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5A2F91272D1C6F00658D80 /* LaunchScreen.storyboard */; };
+		5C5A2F9B272D265A00658D80 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A2F9A272D265A00658D80 /* APIConstants.swift */; };
+		5C5A2F9D272D278500658D80 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A2F9C272D278500658D80 /* LoginResponseDataModel.swift */; };
+		5C5A2F9F272D284F00658D80 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A2F9E272D284F00658D80 /* NetworkResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		5C5A2F8F272D1C6F00658D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C5A2F92272D1C6F00658D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C5A2F94272D1C6F00658D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C5A2F9A272D265A00658D80 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		5C5A2F9C272D278500658D80 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
+		5C5A2F9E272D284F00658D80 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		C5323E21F7CA3685AFBDE9AD /* Pods_week4_seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_week4_seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8523382882E6B3D45C37BB7 /* Pods-week4-seminar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-week4-seminar.release.xcconfig"; path = "Target Support Files/Pods-week4-seminar/Pods-week4-seminar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +54,6 @@
 				401BC5C7EC718A6D39B76064 /* Pods-week4-seminar.debug.xcconfig */,
 				F8523382882E6B3D45C37BB7 /* Pods-week4-seminar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +85,9 @@
 				5C5A2F8F272D1C6F00658D80 /* Assets.xcassets */,
 				5C5A2F91272D1C6F00658D80 /* LaunchScreen.storyboard */,
 				5C5A2F94272D1C6F00658D80 /* Info.plist */,
+				5C5A2F9A272D265A00658D80 /* APIConstants.swift */,
+				5C5A2F9C272D278500658D80 /* LoginResponseDataModel.swift */,
+				5C5A2F9E272D284F00658D80 /* NetworkResult.swift */,
 			);
 			path = "week4-seminar";
 			sourceTree = "<group>";
@@ -207,7 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5A2F9B272D265A00658D80 /* APIConstants.swift in Sources */,
 				5C5A2F8B272D1C6D00658D80 /* ViewController.swift in Sources */,
+				5C5A2F9D272D278500658D80 /* LoginResponseDataModel.swift in Sources */,
+				5C5A2F9F272D284F00658D80 /* NetworkResult.swift in Sources */,
 				5C5A2F87272D1C6D00658D80 /* AppDelegate.swift in Sources */,
 				5C5A2F89272D1C6D00658D80 /* SceneDelegate.swift in Sources */,
 			);
