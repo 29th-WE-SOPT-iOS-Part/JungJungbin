@@ -6,6 +6,8 @@
 	<dict/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>Allow Arbitrary Loads</key>
+		<true/>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>

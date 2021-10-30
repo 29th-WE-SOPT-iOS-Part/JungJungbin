@@ -17,6 +17,7 @@
 		5C5A2F9B272D265A00658D80 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A2F9A272D265A00658D80 /* APIConstants.swift */; };
 		5C5A2F9D272D278500658D80 /* LoginResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A2F9C272D278500658D80 /* LoginResponseDataModel.swift */; };
 		5C5A2F9F272D284F00658D80 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A2F9E272D284F00658D80 /* NetworkResult.swift */; };
+		5C5A2FA1272D28AF00658D80 /* UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5A2FA0272D28AF00658D80 /* UserSignService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5C5A2F9A272D265A00658D80 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		5C5A2F9C272D278500658D80 /* LoginResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDataModel.swift; sourceTree = "<group>"; };
 		5C5A2F9E272D284F00658D80 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		5C5A2FA0272D28AF00658D80 /* UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignService.swift; sourceTree = "<group>"; };
 		C5323E21F7CA3685AFBDE9AD /* Pods_week4_seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_week4_seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8523382882E6B3D45C37BB7 /* Pods-week4-seminar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-week4-seminar.release.xcconfig"; path = "Target Support Files/Pods-week4-seminar/Pods-week4-seminar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 				5C5A2F9A272D265A00658D80 /* APIConstants.swift */,
 				5C5A2F9C272D278500658D80 /* LoginResponseDataModel.swift */,
 				5C5A2F9E272D284F00658D80 /* NetworkResult.swift */,
+				5C5A2FA0272D28AF00658D80 /* UserSignService.swift */,
 			);
 			path = "week4-seminar";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C5A2F9B272D265A00658D80 /* APIConstants.swift in Sources */,
+				5C5A2FA1272D28AF00658D80 /* UserSignService.swift in Sources */,
 				5C5A2F8B272D1C6D00658D80 /* ViewController.swift in Sources */,
 				5C5A2F9D272D278500658D80 /* LoginResponseDataModel.swift in Sources */,
 				5C5A2F9F272D284F00658D80 /* NetworkResult.swift in Sources */,
