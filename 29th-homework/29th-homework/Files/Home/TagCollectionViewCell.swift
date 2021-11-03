@@ -5,7 +5,6 @@
 //  Created by 1v1 on 2021/10/29.
 //
 
-import Foundation
 import UIKit
 
 class TagCollectionViewCell: UICollectionViewCell {
