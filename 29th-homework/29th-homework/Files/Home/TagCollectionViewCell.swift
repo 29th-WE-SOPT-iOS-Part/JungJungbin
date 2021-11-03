@@ -5,7 +5,6 @@
 //  Created by 1v1 on 2021/10/29.
 //
 
-import Foundation
 import UIKit
 
 class TagCollectionViewCell: UICollectionViewCell {
@@ -13,13 +12,12 @@ class TagCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tagLabel: UILabel!
     override var isSelected: Bool {
         didSet {
-            
             if isSelected {
-                contentView.layer.borderColor = CGColor(gray: 1, alpha: 1)
+                contentView.layer.borderColor = UIColor.darkGray.cgColor
                 contentView.backgroundColor = .darkGray
                 tagLabel.textColor = .white
             } else {
-                contentView.layer.borderColor = UIColor(named: "BtnStrokeGray")!.cgColor
+                contentView.layer.borderColor = UIColor.BtnStrokeGray.cgColor
                 contentView.backgroundColor = .BtnBGGray
                 tagLabel.textColor = .black
             }
@@ -28,4 +26,5 @@ class TagCollectionViewCell: UICollectionViewCell {
     func setData(tagValue: String) {
         tagLabel.text = tagValue
     }
+    
 }

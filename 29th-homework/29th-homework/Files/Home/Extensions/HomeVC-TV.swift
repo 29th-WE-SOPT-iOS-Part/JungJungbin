@@ -5,7 +5,6 @@
 //  Created by 1v1 on 2021/10/29.
 //
 
-import Foundation
 import UIKit
 
 extension HomeVC: UITableViewDataSource {
@@ -19,8 +18,6 @@ extension HomeVC: UITableViewDataSource {
         cell.setData(thumbnailImg: curData.thumbnailImage, channelImage: curData.channelImage, title: curData.title, channelName: curData.channelName, viewsM: curData.viewsM, weeks: curData.uploadWeeks)
         return cell
     }
-    
-    
 }
 
 extension HomeVC: UITableViewDelegate {
@@ -28,4 +25,3 @@ extension HomeVC: UITableViewDelegate {
         return view.frame.height * 0.3768
     }
 }
-

@@ -31,8 +31,6 @@ class CustomTabBarController: UITabBarController {
         setViewControllers([homeVC, shortsVC, addVC, subVC, libraryVC], animated: true)
     }
     private func setTabBarItem(_ VC: UIViewController, title: String, image: UIImage, selectedImage: UIImage) {
-        VC.tabBarItem.title = title
-        VC.tabBarItem.image = image
-        VC.tabBarItem.selectedImage = selectedImage
+        VC.tabBarItem = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
     }
 }
