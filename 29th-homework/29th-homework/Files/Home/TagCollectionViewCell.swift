@@ -13,11 +13,11 @@ class TagCollectionViewCell: UICollectionViewCell {
     override var isSelected: Bool {
         didSet {
             if isSelected {
-                contentView.layer.borderColor = CGColor(gray: 1, alpha: 1)
+                contentView.layer.borderColor = UIColor.darkGray.cgColor
                 contentView.backgroundColor = .darkGray
                 tagLabel.textColor = .white
             } else {
-                contentView.layer.borderColor = UIColor(named: "BtnStrokeGray")!.cgColor
+                contentView.layer.borderColor = UIColor.BtnStrokeGray.cgColor
                 contentView.backgroundColor = .BtnBGGray
                 tagLabel.textColor = .black
             }

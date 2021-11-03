@@ -33,7 +33,7 @@ extension HomeVC: UICollectionViewDataSource {
             cell.setData(tagValue: sampleTagData[indexPath.row])
             cell.contentView.layer.cornerRadius =  cell.contentView.frame.height / 2
             cell.contentView.layer.borderWidth = 1
-            cell.contentView.layer.borderColor = UIColor(named: "BtnStrokeGray")!.cgColor
+            cell.contentView.layer.borderColor = UIColor.BtnStrokeGray.cgColor
             return cell
             
         default:
