@@ -48,20 +48,31 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        videoTableView.delegate = self
-        videoTableView.dataSource = self
-        shortsCollectionView.delegate = self
-        shortsCollectionView.dataSource = self
-        tagCollectionView.delegate = self
-        tagCollectionView.dataSource = self
-        
-        videoTableView.separatorStyle = .none
-        tagCollectionView.allowsSelection = true
+        setUpDelegate()
+        setUpDataSource()
+        setUpUI()
         registerXib()
     }
     
     func registerXib(){
         let xibName = UINib(nibName: VideoTableViewCell.identifier, bundle: nil)
         videoTableView.register(xibName, forCellReuseIdentifier: VideoTableViewCell.identifier)
+    }
+    func setUpUI() {
+        videoTableView.separatorStyle = .none
+        tagCollectionView.allowsSelection = true
+    }
+    func setUpDelegate() {
+        videoTableView.delegate = self
+        [shortsCollectionView, tagCollectionView].forEach {
+            $0?.delegate = self
+        }
+
+    }
+    func setUpDataSource() {
+        videoTableView.dataSource = self
+        [shortsCollectionView, tagCollectionView].forEach {
+            $0?.dataSource = self
+        }
     }
 }
