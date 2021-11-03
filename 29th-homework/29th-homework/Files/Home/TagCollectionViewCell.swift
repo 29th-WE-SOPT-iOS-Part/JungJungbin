@@ -12,7 +12,6 @@ class TagCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var tagLabel: UILabel!
     override var isSelected: Bool {
         didSet {
-            
             if isSelected {
                 contentView.layer.borderColor = CGColor(gray: 1, alpha: 1)
                 contentView.backgroundColor = .darkGray
@@ -27,4 +26,5 @@ class TagCollectionViewCell: UICollectionViewCell {
     func setData(tagValue: String) {
         tagLabel.text = tagValue
     }
+    
 }
