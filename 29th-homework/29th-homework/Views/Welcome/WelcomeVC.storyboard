@@ -68,7 +68,7 @@
                             <constraint firstItem="mJI-c4-wgz" firstAttribute="centerX" secondItem="iM8-lE-zFy" secondAttribute="centerX" id="n1v-go-EiB"/>
                             <constraint firstItem="mJI-c4-wgz" firstAttribute="top" secondItem="ATb-eK-Ynv" secondAttribute="bottom" constant="23" id="ucE-Zv-vzc"/>
                             <constraint firstItem="22K-TV-XeT" firstAttribute="top" secondItem="mJI-c4-wgz" secondAttribute="bottom" constant="53" id="vaS-3s-Uuk"/>
-                            <constraint firstItem="ATb-eK-Ynv" firstAttribute="top" secondItem="Qd7-Vu-1Y9" secondAttribute="top" constant="248" id="xkV-Pq-ZYc"/>
+                            <constraint firstItem="ATb-eK-Ynv" firstAttribute="top" secondItem="iM8-lE-zFy" secondAttribute="top" constant="292" id="xkV-Pq-ZYc"/>
                         </constraints>
                     </view>
                     <connections>

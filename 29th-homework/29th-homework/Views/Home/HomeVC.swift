@@ -56,7 +56,7 @@ class HomeVC: UIViewController {
         registerXib()
     }
     @IBAction func tapProfileBtn(_ sender: Any) {
-        guard let nextVC = UIStoryboard(name: "SignInVC", bundle: nil).instantiateViewController(withIdentifier: SignInVC.identifier) as? SignInVC else { return }
+        guard let nextVC = UIStoryboard(name: "SignInVC", bundle: nil).instantiateViewController(withIdentifier: "SignInNavigationController") as? UINavigationController else { return }
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true, completion: nil)
     }

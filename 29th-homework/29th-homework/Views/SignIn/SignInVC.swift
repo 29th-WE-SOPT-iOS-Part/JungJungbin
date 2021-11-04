@@ -16,16 +16,24 @@ class SignInVC: UIViewController {
     @IBOutlet weak var newAccountBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     let commonInsets = UIEdgeInsets(top: 12, left: 14, bottom: 12, right: 14)
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
         self.view.addGestureRecognizer(tapGesture)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
 
     @IBAction func tapNewAccountBtn(_ sender: Any) {
-        guard let nextVC = UIStoryboard(name: "SignUpVC", bundle: nil).instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC else { return }
+        guard let nextVC = UIStoryboard(name: "SignUpVC", bundle: nil).instantiateViewController(withIdentifier: SignUpVC.identifier) as? SignUpVC else { return }
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapNextBtn(_ sender: Any) {
@@ -51,7 +59,6 @@ class SignInVC: UIViewController {
             $0?.setPaddingLR(14.0)
             $0?.delegate = self
         }
-        
         
     }
 }

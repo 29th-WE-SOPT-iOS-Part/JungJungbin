@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mt-oH-Wkl">
-                                <rect key="frame" x="173" y="217" width="68" height="32"/>
+                                <rect key="frame" x="173" y="225" width="68" height="32"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfn-Nl-btG">
-                                <rect key="frame" x="44" y="263" width="326" height="46"/>
+                                <rect key="frame" x="44" y="271" width="326" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="0Xx-xN-4ny"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름을 입력해 주세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUp-9X-nhS" customClass="LoginTextField" customModule="_9th_homework" customModuleProvider="target">
-                                <rect key="frame" x="22" y="377" width="370" height="48"/>
+                                <rect key="frame" x="22" y="385" width="370" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="6BM-hc-W5A"/>
                                 </constraints>
@@ -42,7 +42,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일 또는 휴대전화" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hbm-XI-CJq" customClass="LoginTextField" customModule="_9th_homework" customModuleProvider="target">
-                                <rect key="frame" x="22" y="442" width="370" height="48"/>
+                                <rect key="frame" x="22" y="450" width="370" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ecU-0B-f1x"/>
                                 </constraints>
@@ -50,7 +50,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 입력" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GU7-DL-v6q" customClass="LoginTextField" customModule="_9th_homework" customModuleProvider="target">
-                                <rect key="frame" x="22" y="507" width="370" height="48"/>
+                                <rect key="frame" x="22" y="515" width="370" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="3cv-Yh-666"/>
                                 </constraints>
@@ -58,7 +58,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faU-gB-hXd">
-                                <rect key="frame" x="318" y="619" width="74" height="42"/>
+                                <rect key="frame" x="318" y="627" width="74" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="ET0-xb-Im5"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="RVQ-5P-BdX"/>
@@ -74,14 +74,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LQ6-fJ-6HY">
-                                <rect key="frame" x="148" y="154" width="118" height="40"/>
+                                <rect key="frame" x="148" y="162" width="118" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="118" id="23N-zF-6wg"/>
                                     <constraint firstAttribute="height" constant="40" id="uQO-v5-gzU"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsp-un-Fly">
-                                <rect key="frame" x="22" y="619" width="74" height="42"/>
+                                <rect key="frame" x="22" y="627" width="74" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="YsE-3W-Qbn"/>
                                     <constraint firstAttribute="height" constant="42" id="wDm-v9-RIz"/>
@@ -107,7 +107,7 @@
                             <constraint firstItem="GU7-DL-v6q" firstAttribute="leading" secondItem="tUp-9X-nhS" secondAttribute="leading" id="KvS-VZ-m8R"/>
                             <constraint firstItem="Hbm-XI-CJq" firstAttribute="trailing" secondItem="tUp-9X-nhS" secondAttribute="trailing" id="VLF-I0-oJq"/>
                             <constraint firstItem="tUp-9X-nhS" firstAttribute="top" secondItem="cfn-Nl-btG" secondAttribute="bottom" constant="68" id="Wec-f4-Asl"/>
-                            <constraint firstItem="LQ6-fJ-6HY" firstAttribute="top" secondItem="aQC-WY-Uqd" secondAttribute="top" constant="110" id="XYX-r9-594"/>
+                            <constraint firstItem="LQ6-fJ-6HY" firstAttribute="top" secondItem="4tF-fG-lyX" secondAttribute="top" constant="162" id="XYX-r9-594"/>
                             <constraint firstItem="faU-gB-hXd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vsp-un-Fly" secondAttribute="trailing" constant="8" symbolic="YES" id="cNn-nE-bhL"/>
                             <constraint firstItem="Vsp-un-Fly" firstAttribute="top" secondItem="GU7-DL-v6q" secondAttribute="bottom" constant="64" id="ehq-Uv-xBJ"/>
                             <constraint firstItem="GU7-DL-v6q" firstAttribute="trailing" secondItem="tUp-9X-nhS" secondAttribute="trailing" id="eo5-8t-BKX"/>
@@ -134,6 +134,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qnp-uU-5ji" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="85.714285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o43-uc-ZNX">
+            <objects>
+                <navigationController storyboardIdentifier="SignInNavigationController" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="Vcj-9p-WoI" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TW2-My-btK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Az-xr-Eoq" kind="relationship" relationship="rootViewController" id="fbI-nI-PbO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ax8-43-rfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
         </scene>
     </scenes>
     <resources>
