@@ -1,5 +1,5 @@
 //
-//  CompleteSignUpVC.swift
+//  WelcomeVC.swift
 //  29th-week1-homework
 //
 //  Created by 1v1 on 2021/10/03.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CompleteVC: UIViewController {
+class WelcomeVC: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var nextBtn: UIButton!
     var receiveData = ""

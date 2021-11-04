@@ -18,7 +18,7 @@ class CustomTabBarController: UITabBarController {
         guard let homeVC = UIStoryboard(name: "HomeVC", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeVC,
               let shortsVC = UIStoryboard(name: "ShortsVC", bundle: nil).instantiateViewController(withIdentifier: "ShortsVC") as? ShortsVC,
               let addVC = UIStoryboard(name: "AddVC", bundle: nil).instantiateViewController(withIdentifier: "AddVC") as? AddVC,
-              let subVC = UIStoryboard(name: "SubVC", bundle: nil).instantiateViewController(withIdentifier: "SubVC") as? SubVC,
+              let subVC = UIStoryboard(name: "SubscribeVC", bundle: nil).instantiateViewController(withIdentifier: "SubscribeVC") as? SubscribeVC,
               let libraryVC = UIStoryboard(name: "LibraryVC", bundle: nil).instantiateViewController(withIdentifier: "LibraryVC") as? LibraryVC
         else { return }
         

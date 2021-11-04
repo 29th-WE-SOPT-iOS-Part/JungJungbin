@@ -28,7 +28,7 @@ class SignInVC: UIViewController {
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapNextBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CompleteVC") as? CompleteVC else { return }
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else { return }
         nextVC.receiveData = nameTextField.text ?? ""
         self.navigationController?.pushViewController(nextVC, animated: true)
 
