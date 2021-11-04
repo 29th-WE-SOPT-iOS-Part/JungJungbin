@@ -25,11 +25,11 @@ class SignInVC: UIViewController {
     }
 
     @IBAction func tapNewAccountBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") else { return }
+        guard let nextVC = UIStoryboard(name: "SignUpVC", bundle: nil).instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC else { return }
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapNextBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else { return }
+        guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else { return }
         nextVC.receiveData = nameTextField.text ?? ""
         self.navigationController?.pushViewController(nextVC, animated: true)
 

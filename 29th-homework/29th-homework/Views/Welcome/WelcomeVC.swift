@@ -24,7 +24,7 @@ class WelcomeVC: UIViewController {
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 10.5
     }
     @IBAction func tapAddAcountBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as? SignInVC else { return }
+        guard let nextVC = UIStoryboard(name: "SignInVC", bundle: nil).instantiateViewController(withIdentifier: SignInVC.identifier) as? SignInVC else { return }
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapOKBtn(_ sender: Any) {

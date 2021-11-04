@@ -15,11 +15,11 @@ class CustomTabBarController: UITabBarController {
     }
     
     func setTabBar() {
-        guard let homeVC = UIStoryboard(name: "HomeVC", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeVC,
-              let shortsVC = UIStoryboard(name: "ShortsVC", bundle: nil).instantiateViewController(withIdentifier: "ShortsVC") as? ShortsVC,
-              let addVC = UIStoryboard(name: "AddVC", bundle: nil).instantiateViewController(withIdentifier: "AddVC") as? AddVC,
-              let subVC = UIStoryboard(name: "SubscribeVC", bundle: nil).instantiateViewController(withIdentifier: "SubscribeVC") as? SubscribeVC,
-              let libraryVC = UIStoryboard(name: "LibraryVC", bundle: nil).instantiateViewController(withIdentifier: "LibraryVC") as? LibraryVC
+        guard let homeVC = UIStoryboard(name: "HomeVC", bundle: nil).instantiateViewController(withIdentifier: HomeVC.identifier) as? HomeVC,
+              let shortsVC = UIStoryboard(name: "ShortsVC", bundle: nil).instantiateViewController(withIdentifier: ShortsVC.identifier) as? ShortsVC,
+              let addVC = UIStoryboard(name: "AddVC", bundle: nil).instantiateViewController(withIdentifier: AddVC.identifier) as? AddVC,
+              let subVC = UIStoryboard(name: "SubscribeVC", bundle: nil).instantiateViewController(withIdentifier: SubscribeVC.identifier) as? SubscribeVC,
+              let libraryVC = UIStoryboard(name: "LibraryVC", bundle: nil).instantiateViewController(withIdentifier: LibraryVC.identifier) as? LibraryVC
         else { return }
         
         setTabBarItem(homeVC, title: "홈", image: .homeIcon, selectedImage: .homeIconFill)

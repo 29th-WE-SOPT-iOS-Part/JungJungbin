@@ -29,7 +29,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else { return }
+        guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else { return }
         nextVC.receiveData = nameTextField.text ?? ""
         self.navigationController?.pushViewController(nextVC, animated: true)
 
