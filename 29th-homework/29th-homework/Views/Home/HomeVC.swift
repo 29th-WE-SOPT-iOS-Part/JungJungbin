@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class HomeVC: UIViewController {
+    static let identifier = "HomeVC"
     struct ShortsDataForm {
         var channelName: String
         var channelImage: UIImage
@@ -25,6 +26,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var shortsCollectionView: UICollectionView!
     @IBOutlet weak var tagCollectionView: UICollectionView!
     @IBOutlet weak var videoTableView: UITableView!
+    @IBOutlet weak var profileBtn: UIButton!
     
     var sampleShortsData: [ShortsDataForm] = [
         ShortsDataForm(channelName: "iOSPart", channelImage: UIImage(named: "ggamju1-0")!),
@@ -52,6 +54,11 @@ class HomeVC: UIViewController {
         setUpDataSource()
         setUpUI()
         registerXib()
+    }
+    @IBAction func tapProfileBtn(_ sender: Any) {
+//        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else { return }
+//        nextVC.receiveData = nameTextField.text ?? ""
+//        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     func registerXib(){

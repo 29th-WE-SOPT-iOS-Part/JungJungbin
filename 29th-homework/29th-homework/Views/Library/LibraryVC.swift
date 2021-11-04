@@ -7,6 +7,7 @@
 
 import UIKit
 class LibraryVC: UIViewController {
+    static let identifier = "LibraryVC"
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -8,6 +8,7 @@
 import UIKit
 
 class SignInVC: UIViewController {
+    static let identifier = "SignInVC"
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var nameTextField: LoginTextField!
     @IBOutlet weak var emailTextField: LoginTextField!

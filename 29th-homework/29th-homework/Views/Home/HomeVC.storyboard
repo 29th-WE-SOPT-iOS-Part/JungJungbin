@@ -41,6 +41,9 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="wesoptProfile"/>
+                                                        <connections>
+                                                            <action selector="tapProfileBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rpR-ZJ-Hm8"/>
+                                                        </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-tv-u5i">
                                                         <rect key="frame" x="197" y="6" width="121" height="32"/>
@@ -221,6 +224,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="profileBtn" destination="kW8-Mg-f9e" id="X1w-zq-9nf"/>
                         <outlet property="shortsCollectionView" destination="56k-TA-uYH" id="ATd-wz-DWD"/>
                         <outlet property="tagCollectionView" destination="9yB-wK-0UL" id="wAC-7o-EX0"/>
                         <outlet property="videoTableView" destination="Waa-NA-ruw" id="Vgb-p7-1Go"/>

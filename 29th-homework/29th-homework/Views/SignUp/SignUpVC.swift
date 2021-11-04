@@ -8,6 +8,7 @@
 import UIKit
 
 class SignUpVC: UIViewController {
+    static let identifier = "SignUpVC"
     @IBOutlet weak var nameTextField: LoginTextField!
     @IBOutlet weak var emailTextField: LoginTextField!
     @IBOutlet weak var pwTextField: LoginTextField!

@@ -8,6 +8,7 @@
 import UIKit
 
 class WelcomeVC: UIViewController {
+    static let identifier = "WelcomeVC"
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var nextBtn: UIButton!
     var receiveData = ""
