@@ -8,6 +8,14 @@
 import Alamofire
 
 class SignInViewModel {
+    func pushSignUpVC(vc: UIViewController) {
+        
+    }
+    
+    func pushWelcomeVC(vc: UIViewController) {
+        
+    }
+    
     func simpleAlert(title: String, message: String, vc: UIViewController) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "확인" ,style: .default)
@@ -32,7 +40,7 @@ class SignInViewModel {
             case .success:
                 guard let statusCode = dataResponse.response?.statusCode else { return }
                 guard let value = dataResponse.value else { return }
-                let networkResult = self.judgeLoginStatus(by: statusCode, value)
+                let networkResult = self.judgeSignInStatus(by: statusCode, value)
                 completion(networkResult)
             case .failure(let error):
                 print(error)
@@ -41,11 +49,11 @@ class SignInViewModel {
         }
     }
     
-    private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+    private func judgeSignInStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200: return isVaildSignInData(data: data)
-        case 400: return .pathErr
-        case 500: return .serverErr
+        case 400: return isVaildSignInData(data: data) // .pathErr
+        case 500: return isVaildSignInData(data: data) // .serverErr
         default: return .networkFail
         }
     }
@@ -55,5 +63,7 @@ class SignInViewModel {
         guard let decodedData = try? decoder.decode(SignInResponseData.self, from: data) else { return .pathErr }
         return .success(decodedData)
     }
+    
+    
     
 }
