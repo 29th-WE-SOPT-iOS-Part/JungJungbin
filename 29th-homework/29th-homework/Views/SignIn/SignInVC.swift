@@ -9,6 +9,8 @@ import UIKit
 
 class SignInVC: UIViewController {
     static let identifier = "SignInVC"
+    var viewModel = SignInViewModel()
+    
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var nameTextField: LoginTextField!
     @IBOutlet weak var emailTextField: LoginTextField!
@@ -37,7 +39,24 @@ class SignInVC: UIViewController {
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapNextBtn(_ sender: Any) {
-        guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else { return }
+        viewModel.login(email: emailTextField.text!, password: pwTextField.text!) { responseData in
+            switch responseData {
+            case .success(let signInResponse):
+                guard let response = signInResponse as? SignInResponseData else { return }
+                self.viewModel.simpleAlert(title: "로그인", message: response.message, vc: self)
+            case .requestErr(let msg):
+                dPrint("request Err", msg)
+                self.viewModel.simpleAlert(title: "로그인", message: "요청 오류로 로그인에 실패하였습니다.", vc: self)
+            case .pathErr:
+                self.viewModel.simpleAlert(title: "로그인", message: "요청 오류로 로그인에 실패하였습니다.", vc: self)
+            case .serverErr:
+                self.viewModel.simpleAlert(title: "로그인 실패", message: "서버 오류로 로그인에 실패하였습니다.", vc: self)
+            case .networkFail:
+                self.viewModel.simpleAlert(title: "로그인 실패", message: "네트워크 환경을 확인해 주세요.", vc: self)
+                
+            }
+        }
+        guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: WelcomeVC.identifier) as? WelcomeVC else { return }
         nextVC.receiveData = nameTextField.text ?? ""
         self.navigationController?.pushViewController(nextVC, animated: true)
 
@@ -45,9 +64,10 @@ class SignInVC: UIViewController {
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
+
     
     private func setUpUI() {
-        infoLabel.text = "Youtube도 이동하며 계속하세요.\n앱 및 Safari에서도 Google 서비스에 로그인됩니다."
+        infoLabel.text = "Youtube로 이동하며 계속하세요.\n앱 및 Safari에서도 Google 서비스에 로그인됩니다."
         nextBtn.isEnabled = false
         nextBtn.titleLabel?.textColor = .white
         nextBtn.backgroundColor = .gray
