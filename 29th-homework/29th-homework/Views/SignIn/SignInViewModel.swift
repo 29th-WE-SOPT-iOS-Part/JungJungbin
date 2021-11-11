@@ -8,20 +8,6 @@
 import Alamofire
 
 class SignInViewModel {
-    func pushSignUpVC(vc: UIViewController) {
-        
-    }
-    
-    func pushWelcomeVC(vc: UIViewController) {
-        
-    }
-    
-    func simpleAlert(title: String, message: String, vc: UIViewController) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인" ,style: .default)
-        alert.addAction(okAction)
-        vc.present(alert, animated: true)
-    }
     
     func login(email: String, password: String, completion: @escaping (NetworkResult<Any>) -> (Void)) {
         let url = APIConstants.loginURL

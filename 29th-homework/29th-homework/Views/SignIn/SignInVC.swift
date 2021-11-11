@@ -43,22 +43,29 @@ class SignInVC: UIViewController {
             switch responseData {
             case .success(let signInResponse):
                 guard let response = signInResponse as? SignInResponseData else { return }
-                self.viewModel.simpleAlert(title: "로그인", message: response.message, vc: self)
+
+                dPrint("userData", response.data)
+                if let userData = response.data { // 로그인을 정상적으로 성공해서 user Data가 들어왔을 때 WelcomeVC 띄우기
+                    self.alert(title: "로그인", message: response.message) {
+                        guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: WelcomeVC.identifier) as? WelcomeVC else { return }
+                        nextVC.receiveData = userData.name
+                        self.navigationController?.pushViewController(nextVC, animated: true)
+                    }
+                } else {
+                    self.alert(title: "로그인", message: response.message, completion: nil)
+                }
             case .requestErr(let msg):
                 dPrint("request Err", msg)
-                self.viewModel.simpleAlert(title: "로그인", message: "요청 오류로 로그인에 실패하였습니다.", vc: self)
+                self.alert(title: "로그인", message: "요청 오류로 로그인에 실패하였습니다.", completion: nil)
             case .pathErr:
-                self.viewModel.simpleAlert(title: "로그인", message: "요청 오류로 로그인에 실패하였습니다.", vc: self)
+                self.alert(title: "로그인", message: "요청 오류로 로그인에 실패하였습니다.", completion: nil)
             case .serverErr:
-                self.viewModel.simpleAlert(title: "로그인 실패", message: "서버 오류로 로그인에 실패하였습니다.", vc: self)
+                self.alert(title: "로그인", message: "서버 오류로 로그인에 실패하였습니다.", completion: nil)
             case .networkFail:
-                self.viewModel.simpleAlert(title: "로그인 실패", message: "네트워크 환경을 확인해 주세요.", vc: self)
+                self.alert(title: "로그인 실패", message: "네트워크 환경을 확인해 주세요.", completion: nil)
                 
             }
         }
-        guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: WelcomeVC.identifier) as? WelcomeVC else { return }
-        nextVC.receiveData = nameTextField.text ?? ""
-        self.navigationController?.pushViewController(nextVC, animated: true)
 
     }
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {

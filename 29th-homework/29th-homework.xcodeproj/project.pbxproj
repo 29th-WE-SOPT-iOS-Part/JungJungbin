@@ -12,6 +12,7 @@
 		5C376A68273CF52F0040486B /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A67273CF52F0040486B /* SignInViewModel.swift */; };
 		5C376A6C273CF6260040486B /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A6A273CF6260040486B /* APIConstants.swift */; };
 		5C376A6D273CF6260040486B /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A6B273CF6260040486B /* NetworkResult.swift */; };
+		5C376A6F273D5A3A0040486B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A6E273D5A3A0040486B /* UIViewControllerExtension.swift */; };
 		5C6450F3273229380098A424 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6450F2273229380098A424 /* DebugPrint.swift */; };
 		5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FAD8A2720484300E35816 /* UIColorExtension.swift */; };
 		5C92C0EB2733BA7500CCF24B /* SignInVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C92C0EA2733BA7500CCF24B /* SignInVC.storyboard */; };
@@ -52,6 +53,7 @@
 		5C376A67273CF52F0040486B /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		5C376A6A273CF6260040486B /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		5C376A6B273CF6260040486B /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		5C376A6E273D5A3A0040486B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5C6450F2273229380098A424 /* DebugPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
 		5C8FAD8A2720484300E35816 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5C92C0EA2733BA7500CCF24B /* SignInVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInVC.storyboard; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			children = (
 				5C8FAD8A2720484300E35816 /* UIColorExtension.swift */,
 				5CEF1D4227225CD60068918E /* UIImageExtension.swift */,
+				5C376A6E273D5A3A0040486B /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			files = (
 				5CC39AF82709B55500FBB37B /* SignUpVC.swift in Sources */,
 				5CEF1D41272259F00068918E /* LibraryVC.swift in Sources */,
+				5C376A6F273D5A3A0040486B /* UIViewControllerExtension.swift in Sources */,
 				5C376A6C273CF6260040486B /* APIConstants.swift in Sources */,
 				5CC39AE82709B32E00FBB37B /* SignInVC.swift in Sources */,
 				5CBBD34927294A7B000CF8E2 /* ShortsCollectionViewCell.swift in Sources */,
