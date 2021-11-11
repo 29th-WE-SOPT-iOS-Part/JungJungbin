@@ -7,7 +7,7 @@
 
 // SignInModel - SignIn 뷰에서 사용할 모델 정의
 
-struct SignInResponseData {
+struct SignInResponseData: Codable {
     let status: Int
     let success: Bool
     let message: String
