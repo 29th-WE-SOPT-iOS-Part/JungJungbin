@@ -4,13 +4,14 @@
 //
 //  Created by 1v1 on 2021/11/11.
 //
+// TODO: SignIn, SignUp 공통된 코드 묶어서 함수화..
 
 import Alamofire
 
 class SignInViewModel {
     
     func requestSignIn(email: String, password: String, completion: @escaping (NetworkResult<Any>) -> (Void)) {
-        let url = APIConstants.loginURL
+        let url = APIConstants.signInURL
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body: Parameters = [
             "email": email,

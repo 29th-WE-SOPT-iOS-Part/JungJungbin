@@ -14,6 +14,7 @@
 		5C376A6D273CF6260040486B /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A6B273CF6260040486B /* NetworkResult.swift */; };
 		5C376A6F273D5A3A0040486B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A6E273D5A3A0040486B /* UIViewControllerExtension.swift */; };
 		5C376A71273DF9E20040486B /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A70273DF9E20040486B /* SignUpModel.swift */; };
+		5C376A73273DFAB40040486B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A72273DFAB40040486B /* SignUpViewModel.swift */; };
 		5C6450F3273229380098A424 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6450F2273229380098A424 /* DebugPrint.swift */; };
 		5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FAD8A2720484300E35816 /* UIColorExtension.swift */; };
 		5C92C0EB2733BA7500CCF24B /* SignInVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C92C0EA2733BA7500CCF24B /* SignInVC.storyboard */; };
@@ -56,6 +57,7 @@
 		5C376A6B273CF6260040486B /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		5C376A6E273D5A3A0040486B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5C376A70273DF9E20040486B /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		5C376A72273DFAB40040486B /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		5C6450F2273229380098A424 /* DebugPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
 		5C8FAD8A2720484300E35816 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5C92C0EA2733BA7500CCF24B /* SignInVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInVC.storyboard; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				5C92C0ED2733BAB300CCF24B /* SignUpVC.storyboard */,
 				5CC39AF72709B55500FBB37B /* SignUpVC.swift */,
 				5C376A70273DF9E20040486B /* SignUpModel.swift */,
+				5C376A72273DFAB40040486B /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				5CEF1D39272259D00068918E /* HomeVC.swift in Sources */,
 				5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */,
 				5CEF1D3B272259ED0068918E /* ShortsVC.swift in Sources */,
+				5C376A73273DFAB40040486B /* SignUpViewModel.swift in Sources */,
 				5CEF1D3D272259EE0068918E /* AddVC.swift in Sources */,
 				5CEF1D4327225CD60068918E /* UIImageExtension.swift in Sources */,
 				5CF4F573272C12EE001E483B /* TagCollectionViewCell.swift in Sources */,
