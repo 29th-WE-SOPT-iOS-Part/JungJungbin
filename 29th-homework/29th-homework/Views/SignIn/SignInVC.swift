@@ -39,7 +39,7 @@ class SignInVC: UIViewController {
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapNextBtn(_ sender: Any) {
-        viewModel.login(email: emailTextField.text!, password: pwTextField.text!) { responseData in
+        viewModel.requestSignIn(email: emailTextField.text!, password: pwTextField.text!) { responseData in
             switch responseData {
             case .success(let signInResponse):
                 guard let response = signInResponse as? SignInResponseData else { return }

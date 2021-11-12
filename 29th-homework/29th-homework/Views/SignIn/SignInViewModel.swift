@@ -9,7 +9,7 @@ import Alamofire
 
 class SignInViewModel {
     
-    func login(email: String, password: String, completion: @escaping (NetworkResult<Any>) -> (Void)) {
+    func requestSignIn(email: String, password: String, completion: @escaping (NetworkResult<Any>) -> (Void)) {
         let url = APIConstants.loginURL
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body: Parameters = [
