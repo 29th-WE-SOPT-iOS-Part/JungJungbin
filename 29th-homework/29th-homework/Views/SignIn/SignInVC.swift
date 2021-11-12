@@ -46,8 +46,11 @@ class SignInVC: UIViewController {
                 dPrint("userData", response.data as Any)
                 if let userData = response.data { // 로그인을 정상적으로 성공해서 user Data가 들어왔을 때 WelcomeVC 띄우기
                     self.alert(title: "로그인", message: response.message) {
+                        UserDefaults.standard.set(userData.name, forKey: UserDefaultsConst.shared.userName)
                         guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: WelcomeVC.identifier) as? WelcomeVC else { return }
-                        nextVC.receiveData = userData.name
+                        if let userName = UserDefaults.standard.value(forKey: UserDefaultsConst.shared.userName) as? String {
+                            nextVC.receiveData = userName
+                        }
                         self.navigationController?.pushViewController(nextVC, animated: true)
                     }
                 } else {

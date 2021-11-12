@@ -15,6 +15,7 @@
 		5C376A6F273D5A3A0040486B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A6E273D5A3A0040486B /* UIViewControllerExtension.swift */; };
 		5C376A71273DF9E20040486B /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A70273DF9E20040486B /* SignUpModel.swift */; };
 		5C376A73273DFAB40040486B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A72273DFAB40040486B /* SignUpViewModel.swift */; };
+		5C376A75273E000D0040486B /* UserDefaultsConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A74273E000D0040486B /* UserDefaultsConst.swift */; };
 		5C6450F3273229380098A424 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6450F2273229380098A424 /* DebugPrint.swift */; };
 		5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FAD8A2720484300E35816 /* UIColorExtension.swift */; };
 		5C92C0EB2733BA7500CCF24B /* SignInVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C92C0EA2733BA7500CCF24B /* SignInVC.storyboard */; };
@@ -58,6 +59,7 @@
 		5C376A6E273D5A3A0040486B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5C376A70273DF9E20040486B /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		5C376A72273DFAB40040486B /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		5C376A74273E000D0040486B /* UserDefaultsConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConst.swift; sourceTree = "<group>"; };
 		5C6450F2273229380098A424 /* DebugPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
 		5C8FAD8A2720484300E35816 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5C92C0EA2733BA7500CCF24B /* SignInVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInVC.storyboard; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				5CEF1D282721B7040068918E /* LoginTextField.swift */,
 				5CEF1D2C2722584D0068918E /* CustomTabBarController.swift */,
 				5C6450F2273229380098A424 /* DebugPrint.swift */,
+				5C376A74273E000D0040486B /* UserDefaultsConst.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				5CC39AFA2709B58100FBB37B /* WelcomeVC.swift in Sources */,
 				5C376A6D273CF6260040486B /* NetworkResult.swift in Sources */,
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
+				5C376A75273E000D0040486B /* UserDefaultsConst.swift in Sources */,
 				5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */,
 				5CEF1D292721B7040068918E /* LoginTextField.swift in Sources */,
 				5C376A66273CF2380040486B /* SignInModel.swift in Sources */,
