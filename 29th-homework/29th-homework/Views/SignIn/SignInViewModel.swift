@@ -11,9 +11,7 @@ class SignInViewModel {
     
     func login(email: String, password: String, completion: @escaping (NetworkResult<Any>) -> (Void)) {
         let url = APIConstants.loginURL
-        let header: HTTPHeaders = [
-            "Content-Type": "application/json"
-        ]
+        let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body: Parameters = [
             "email": email,
             "password": password
@@ -49,7 +47,4 @@ class SignInViewModel {
         guard let decodedData = try? decoder.decode(SignInResponseData.self, from: data) else { return .pathErr }
         return .success(decodedData)
     }
-    
-    
-    
 }

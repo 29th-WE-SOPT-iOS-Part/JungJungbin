@@ -17,7 +17,7 @@ class SignInVC: UIViewController {
     @IBOutlet weak var pwTextField: LoginTextField!
     @IBOutlet weak var newAccountBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
-    let commonInsets = UIEdgeInsets(top: 12, left: 14, bottom: 12, right: 14)
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
@@ -43,8 +43,7 @@ class SignInVC: UIViewController {
             switch responseData {
             case .success(let signInResponse):
                 guard let response = signInResponse as? SignInResponseData else { return }
-
-                dPrint("userData", response.data)
+                dPrint("userData", response.data as Any)
                 if let userData = response.data { // 로그인을 정상적으로 성공해서 user Data가 들어왔을 때 WelcomeVC 띄우기
                     self.alert(title: "로그인", message: response.message) {
                         guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: WelcomeVC.identifier) as? WelcomeVC else { return }
@@ -66,12 +65,11 @@ class SignInVC: UIViewController {
                 
             }
         }
-
     }
+    
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
-
     
     private func setUpUI() {
         infoLabel.text = "Youtube로 이동하며 계속하세요.\n앱 및 Safari에서도 Google 서비스에 로그인됩니다."
@@ -86,7 +84,6 @@ class SignInVC: UIViewController {
             $0?.setPaddingLR(14.0)
             $0?.delegate = self
         }
-        
     }
 }
 
@@ -98,6 +95,7 @@ extension SignInVC: UITextFieldDelegate {
             setUpNextBtn(status: false)
         }
     }
+    
     private func setUpNextBtn(status: Bool) {
         nextBtn.isEnabled = status
         nextBtn.backgroundColor = status ? .Blue : .gray
