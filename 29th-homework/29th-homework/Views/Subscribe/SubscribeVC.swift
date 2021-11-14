@@ -6,7 +6,8 @@
 //
 
 import UIKit
-class SubVC: UIViewController {
+class SubscribeVC: UIViewController {
+    static let identifier = "SubscribeVC"
     override func viewDidLoad() {
         super.viewDidLoad()
     }

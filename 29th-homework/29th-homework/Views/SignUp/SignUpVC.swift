@@ -8,6 +8,9 @@
 import UIKit
 
 class SignUpVC: UIViewController {
+    static let identifier = "SignUpVC"
+    var viewModel = SignUpViewModel()
+    
     @IBOutlet weak var nameTextField: LoginTextField!
     @IBOutlet weak var emailTextField: LoginTextField!
     @IBOutlet weak var pwTextField: LoginTextField!
@@ -28,10 +31,32 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CompleteVC") as? CompleteVC else { return }
-        nextVC.receiveData = nameTextField.text ?? ""
-        self.navigationController?.pushViewController(nextVC, animated: true)
-
+        viewModel.requestSignUp(email: emailTextField.text!, name: nameTextField.text!, password: pwTextField.text!) { responseData in
+            switch responseData {
+            case .success(let signInResponse):
+                guard let response = signInResponse as? SignUpResponseData else { return }
+                dPrint("userData", response.data as Any)
+                if let userData = response.data { // 로그인을 정상적으로 성공해서 user Data가 들어왔을 때 WelcomeVC 띄우기
+                    self.alert(title: "회원가입", message: response.message) {
+                        guard let nextVC = UIStoryboard(name: "WelcomeVC", bundle: nil).instantiateViewController(withIdentifier: WelcomeVC.identifier) as? WelcomeVC else { return }
+                        nextVC.receiveData = userData.name
+                        self.navigationController?.pushViewController(nextVC, animated: true)
+                    }
+                } else {
+                    self.alert(title: "회원가입", message: response.message, completion: nil)
+                }
+            case .requestErr(let msg):
+                dPrint("request Err", msg)
+                self.alert(title: "회원가입", message: "요청 오류로 회원 가입에 실패하였습니다.", completion: nil)
+            case .pathErr:
+                self.alert(title: "회원가입", message: "요청 오류로 회원 가입에 실패하였습니다.", completion: nil)
+            case .serverErr:
+                self.alert(title: "회원가입", message: "서버 오류로 회원 가입에 실패하였습니다.", completion: nil)
+            case .networkFail:
+                self.alert(title: "회원가입 실패", message: "네트워크 환경을 확인해 주세요.", completion: nil)
+                
+            }
+        }
     }
 
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {

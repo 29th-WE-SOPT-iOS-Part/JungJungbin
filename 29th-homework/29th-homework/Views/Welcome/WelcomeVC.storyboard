@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="Ihm-fr-lms">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeVC" id="xZf-7C-T3S" customClass="WelcomeVC" customModule="_9th_homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iM8-lE-zFy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22K-TV-XeT">
+                                <rect key="frame" x="22" y="439.5" width="370" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="K3E-rg-RjV"/>
+                                </constraints>
+                                <color key="tintColor" name="Blue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="확인">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOKBtn:" destination="xZf-7C-T3S" eventType="touchUpInside" id="B4g-3C-9Jq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ATb-eK-Ynv">
+                                <rect key="frame" x="148" y="292" width="118" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="5fo-JP-cLt"/>
+                                    <constraint firstAttribute="height" constant="40" id="Boz-Qm-9Sk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT4-et-J2k">
+                                <rect key="frame" x="22" y="504.5" width="370" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" name="Blue"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다른 계정으로 로그인하기"/>
+                                <connections>
+                                    <action selector="tapAddAcountBtn:" destination="xZf-7C-T3S" eventType="touchUpInside" id="Lc9-4J-hWz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ㅇㅇㅇ 님 환영합니다!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-c4-wgz">
+                                <rect key="frame" x="96" y="355" width="222" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qd7-Vu-1Y9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zT4-et-J2k" firstAttribute="trailing" secondItem="22K-TV-XeT" secondAttribute="trailing" id="8yM-na-SHR"/>
+                            <constraint firstItem="22K-TV-XeT" firstAttribute="leading" secondItem="Qd7-Vu-1Y9" secondAttribute="leading" constant="22" id="K3s-Xs-Ims"/>
+                            <constraint firstItem="Qd7-Vu-1Y9" firstAttribute="trailing" secondItem="22K-TV-XeT" secondAttribute="trailing" constant="22" id="Lpm-s1-hrS"/>
+                            <constraint firstItem="zT4-et-J2k" firstAttribute="top" secondItem="22K-TV-XeT" secondAttribute="bottom" constant="23" id="Nhd-mN-4Tn"/>
+                            <constraint firstItem="zT4-et-J2k" firstAttribute="leading" secondItem="22K-TV-XeT" secondAttribute="leading" id="axX-fe-af7"/>
+                            <constraint firstItem="ATb-eK-Ynv" firstAttribute="centerX" secondItem="iM8-lE-zFy" secondAttribute="centerX" id="ezs-G0-xCa"/>
+                            <constraint firstItem="mJI-c4-wgz" firstAttribute="centerX" secondItem="iM8-lE-zFy" secondAttribute="centerX" id="n1v-go-EiB"/>
+                            <constraint firstItem="mJI-c4-wgz" firstAttribute="top" secondItem="ATb-eK-Ynv" secondAttribute="bottom" constant="23" id="ucE-Zv-vzc"/>
+                            <constraint firstItem="22K-TV-XeT" firstAttribute="top" secondItem="mJI-c4-wgz" secondAttribute="bottom" constant="53" id="vaS-3s-Uuk"/>
+                            <constraint firstItem="ATb-eK-Ynv" firstAttribute="top" secondItem="iM8-lE-zFy" secondAttribute="top" constant="292" id="xkV-Pq-ZYc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="22K-TV-XeT" id="amb-EV-mTs"/>
+                        <outlet property="welcomeLabel" destination="mJI-c4-wgz" id="wqz-X8-rKa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cu2-HI-wHV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2352.1739130434785" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="googleLogo" width="118" height="40"/>
+        <namedColor name="Blue">
+            <color red="0.25900000333786011" green="0.5220000147819519" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

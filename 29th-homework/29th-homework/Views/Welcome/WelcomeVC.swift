@@ -1,5 +1,5 @@
 //
-//  CompleteSignUpVC.swift
+//  WelcomeVC.swift
 //  29th-week1-homework
 //
 //  Created by 1v1 on 2021/10/03.
@@ -7,7 +7,8 @@
 
 import UIKit
 
-class CompleteVC: UIViewController {
+class WelcomeVC: UIViewController {
+    static let identifier = "WelcomeVC"
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var nextBtn: UIButton!
     var receiveData = ""
@@ -23,7 +24,7 @@ class CompleteVC: UIViewController {
         nextBtn.layer.cornerRadius = nextBtn.frame.height / 10.5
     }
     @IBAction func tapAddAcountBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as? SignInVC else { return }
+        guard let nextVC = UIStoryboard(name: "SignInVC", bundle: nil).instantiateViewController(withIdentifier: SignInVC.identifier) as? SignInVC else { return }
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func tapOKBtn(_ sender: Any) {

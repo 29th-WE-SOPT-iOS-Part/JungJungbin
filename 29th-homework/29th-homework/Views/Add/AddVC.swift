@@ -1,12 +1,13 @@
 //
-//  ShortsVC.swift
+//  AddVC.swift
 //  29th-homework
 //
 //  Created by 1v1 on 2021/10/22.
 //
 
 import UIKit
-class ShortsVC: UIViewController {
+class AddVC: UIViewController {
+    static let identifier = "AddVC"
     override func viewDidLoad() {
         super.viewDidLoad()
     }
