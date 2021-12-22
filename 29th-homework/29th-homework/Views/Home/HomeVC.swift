@@ -15,14 +15,6 @@ class HomeVC: UIViewController {
         var channelImage: UIImage
     }
     
-    struct VideoDataForm {
-        var channelName: String
-        var channelImage: UIImage
-        var viewsM: Int
-        var uploadWeeks: Int
-        var title: String
-        var thumbnailImage: UIImage
-    }
     @IBOutlet weak var shortsCollectionView: UICollectionView!
     @IBOutlet weak var tagCollectionView: UICollectionView!
     @IBOutlet weak var videoTableView: UITableView!
