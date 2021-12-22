@@ -47,6 +47,7 @@ class HomeVC: UIViewController {
         setUpUI()
         registerXib()
     }
+    
     @IBAction func tapProfileBtn(_ sender: Any) {
         guard let nextVC = UIStoryboard(name: "SignInVC", bundle: nil).instantiateViewController(withIdentifier: "SignInNavigationController") as? UINavigationController else { return }
         nextVC.modalPresentationStyle = .fullScreen
@@ -57,10 +58,12 @@ class HomeVC: UIViewController {
         let xibName = UINib(nibName: VideoTableViewCell.identifier, bundle: nil)
         videoTableView.register(xibName, forCellReuseIdentifier: VideoTableViewCell.identifier)
     }
+    
     func setUpUI() {
         videoTableView.separatorStyle = .none
         tagCollectionView.allowsSelection = true
     }
+    
     func setUpDelegate() {
         videoTableView.delegate = self
         [shortsCollectionView, tagCollectionView].forEach {

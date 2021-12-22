@@ -24,6 +24,13 @@ extension HomeVC: UITableViewDataSource {
 
         return cell
     }
+    
+    @objc func tapImageView(gesture: VideoInfoTapGesture) {
+        guard let vc = UIStoryboard(name: PlayVideoVC.ID, bundle: nil).instantiateViewController(withIdentifier: PlayVideoVC.ID) as? PlayVideoVC else { return }
+        vc.receivedData = gesture.videoInfo ?? VideoDataForm()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
 }
 
 extension HomeVC: UITableViewDelegate {
