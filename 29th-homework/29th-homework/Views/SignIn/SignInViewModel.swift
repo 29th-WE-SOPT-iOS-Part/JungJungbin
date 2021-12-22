@@ -37,8 +37,8 @@ class SignInViewModel {
     private func judgeSignInStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200: return isVaildSignInData(data: data)
-        case 400: return isVaildSignInData(data: data) // .pathErr
-        case 500: return isVaildSignInData(data: data) // .serverErr
+        case 400: return .pathErr
+        case 500: return .serverErr
         default: return .networkFail
         }
     }

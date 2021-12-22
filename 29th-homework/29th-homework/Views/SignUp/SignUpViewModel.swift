@@ -38,8 +38,8 @@ class SignUpViewModel {
     private func judgeSignUpStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
         case 200: return isVaildSignUpData(data: data)
-        case 400: return isVaildSignUpData(data: data) // .pathErr
-        case 500: return isVaildSignUpData(data: data) // .serverErr
+        case 400: return .pathErr
+        case 500: return .serverErr
         default: return .networkFail
         }
     }
