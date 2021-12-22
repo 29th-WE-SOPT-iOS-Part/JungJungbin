@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 struct VideoInfoModel {
-    var image: UIImage
-    var title: String
-    var viewCount: Int
-    var date: Date
+    var image: UIImage = UIImage()
+    var title: String = ""
+    var viewCount: Int = 0
+    var date: Date = Date()
 }
