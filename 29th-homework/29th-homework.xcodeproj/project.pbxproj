@@ -10,8 +10,7 @@
 		1F80801E360F241B5102B1A4 /* Pods_29th_homework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F30B44FB0DDE04325E58B0 /* Pods_29th_homework.framework */; };
 		5C2CADD1277367D70043B3AC /* PlayVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2CADD0277367D70043B3AC /* PlayVideoVC.swift */; };
 		5C2CADD3277367E20043B3AC /* PlayVideoVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2CADD2277367E20043B3AC /* PlayVideoVC.storyboard */; };
-		5C2CADD527736C450043B3AC /* VideoInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2CADD427736C450043B3AC /* VideoInfoModel.swift */; };
-		5C2CADD827736E4E0043B3AC /* timeAgoToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2CADD727736E4E0043B3AC /* timeAgoToString.swift */; };
+		5C2CADDA277373330043B3AC /* VideoDataForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2CADD9277373330043B3AC /* VideoDataForm.swift */; };
 		5C376A66273CF2380040486B /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A65273CF2380040486B /* SignInModel.swift */; };
 		5C376A68273CF52F0040486B /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A67273CF52F0040486B /* SignInViewModel.swift */; };
 		5C376A6C273CF6260040486B /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C376A6A273CF6260040486B /* APIConstants.swift */; };
@@ -58,8 +57,7 @@
 /* Begin PBXFileReference section */
 		5C2CADD0277367D70043B3AC /* PlayVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoVC.swift; sourceTree = "<group>"; };
 		5C2CADD2277367E20043B3AC /* PlayVideoVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayVideoVC.storyboard; sourceTree = "<group>"; };
-		5C2CADD427736C450043B3AC /* VideoInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoModel.swift; sourceTree = "<group>"; };
-		5C2CADD727736E4E0043B3AC /* timeAgoToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeAgoToString.swift; sourceTree = "<group>"; };
+		5C2CADD9277373330043B3AC /* VideoDataForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDataForm.swift; sourceTree = "<group>"; };
 		5C376A65273CF2380040486B /* SignInModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		5C376A67273CF52F0040486B /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		5C376A6A273CF6260040486B /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -150,7 +148,7 @@
 		5C2CADD627736C520043B3AC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5C2CADD427736C450043B3AC /* VideoInfoModel.swift */,
+				5C2CADD9277373330043B3AC /* VideoDataForm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,7 +337,6 @@
 				5CEF1D2C2722584D0068918E /* CustomTabBarController.swift */,
 				5C6450F2273229380098A424 /* DebugPrint.swift */,
 				5C376A74273E000D0040486B /* UserDefaultsConst.swift */,
-				5C2CADD727736E4E0043B3AC /* timeAgoToString.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -470,7 +467,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2CADD827736E4E0043B3AC /* timeAgoToString.swift in Sources */,
 				5CC39AF82709B55500FBB37B /* SignUpVC.swift in Sources */,
 				5CEF1D41272259F00068918E /* LibraryVC.swift in Sources */,
 				5C376A6F273D5A3A0040486B /* UIViewControllerExtension.swift in Sources */,
@@ -480,6 +476,7 @@
 				5CBBD34927294A7B000CF8E2 /* ShortsCollectionViewCell.swift in Sources */,
 				5CEF1D3F272259EF0068918E /* SubscribeVC.swift in Sources */,
 				5CF4F571272BF8B5001E483B /* HomeVC-TV.swift in Sources */,
+				5C2CADDA277373330043B3AC /* VideoDataForm.swift in Sources */,
 				5CEF1D2D2722584D0068918E /* CustomTabBarController.swift in Sources */,
 				5CEF1D39272259D00068918E /* HomeVC.swift in Sources */,
 				5CC39AE42709B32E00FBB37B /* AppDelegate.swift in Sources */,
@@ -494,7 +491,6 @@
 				5CC39AE62709B32E00FBB37B /* SceneDelegate.swift in Sources */,
 				5C376A75273E000D0040486B /* UserDefaultsConst.swift in Sources */,
 				5C8FAD8B2720484300E35816 /* UIColorExtension.swift in Sources */,
-				5C2CADD527736C450043B3AC /* VideoInfoModel.swift in Sources */,
 				5CEF1D292721B7040068918E /* LoginTextField.swift in Sources */,
 				5C376A66273CF2380040486B /* SignInModel.swift in Sources */,
 				5CBBD34C27294FF4000CF8E2 /* HomeVC-CV.swift in Sources */,

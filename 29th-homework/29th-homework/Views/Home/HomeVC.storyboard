@@ -228,7 +228,6 @@
                         <outlet property="shortsCollectionView" destination="56k-TA-uYH" id="ATd-wz-DWD"/>
                         <outlet property="tagCollectionView" destination="9yB-wK-0UL" id="wAC-7o-EX0"/>
                         <outlet property="videoTableView" destination="Waa-NA-ruw" id="Vgb-p7-1Go"/>
-                        <outlet property="videoTableViewHeight" destination="SZh-O3-Y2f" id="88x-H8-s3D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
