@@ -62,6 +62,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9dg-Up-Eef" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1K0-1A-Mv5"/>
+                            <constraint firstItem="Jj0-lS-iDZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DKc-zB-0Vb"/>
+                            <constraint firstItem="dqQ-5t-fac" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="H1O-oc-z47"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9dg-Up-Eef" secondAttribute="trailing" id="IKD-2F-0CZ"/>
+                            <constraint firstItem="Jj0-lS-iDZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XB8-KW-MPW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vzb-aS-yg2" secondAttribute="trailing" id="XRX-Sc-VoK"/>
+                            <constraint firstItem="9dg-Up-Eef" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="h56-dg-vUb"/>
+                            <constraint firstItem="vzb-aS-yg2" firstAttribute="top" secondItem="9dg-Up-Eef" secondAttribute="bottom" id="ju3-WP-157"/>
+                            <constraint firstItem="vzb-aS-yg2" firstAttribute="leading" secondItem="xaC-yX-lHQ" secondAttribute="trailing" constant="10" id="khh-fZ-vTC"/>
                             <constraint firstItem="dqQ-5t-fac" firstAttribute="top" secondItem="9dg-Up-Eef" secondAttribute="bottom" constant="8" symbolic="YES" id="mKy-en-zSO"/>
                             <constraint firstItem="xaC-yX-lHQ" firstAttribute="top" secondItem="dqQ-5t-fac" secondAttribute="bottom" constant="8" symbolic="YES" id="qbd-ya-k8f"/>
                             <constraint firstItem="vzb-aS-yg2" firstAttribute="leading" secondItem="dqQ-5t-fac" secondAttribute="trailing" constant="10" id="qzX-kN-inE"/>
