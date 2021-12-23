@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -185,11 +185,11 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="9yB-wK-0UL" firstAttribute="top" secondItem="GHq-BF-6Ta" secondAttribute="bottom" id="GCB-Lc-W3f"/>
-                                            <constraint firstItem="Waa-NA-ruw" firstAttribute="trailing" secondItem="d28-ef-F6t" secondAttribute="trailing" id="V0H-CV-hmA"/>
+                                            <constraint firstAttribute="trailing" secondItem="d28-ef-F6t" secondAttribute="trailing" id="ZOP-Dy-gap"/>
+                                            <constraint firstItem="d28-ef-F6t" firstAttribute="leading" secondItem="qRE-MO-DUK" secondAttribute="leading" id="aMq-At-oxr"/>
                                             <constraint firstAttribute="trailing" secondItem="56k-TA-uYH" secondAttribute="trailing" id="fHT-U7-g1P"/>
                                             <constraint firstItem="56k-TA-uYH" firstAttribute="top" secondItem="d28-ef-F6t" secondAttribute="bottom" id="lnW-ec-6uG"/>
                                             <constraint firstAttribute="trailing" secondItem="9yB-wK-0UL" secondAttribute="trailing" id="mh2-5g-2iQ"/>
-                                            <constraint firstItem="Waa-NA-ruw" firstAttribute="leading" secondItem="d28-ef-F6t" secondAttribute="leading" id="mu2-va-flj"/>
                                             <constraint firstAttribute="trailing" secondItem="Waa-NA-ruw" secondAttribute="trailing" id="nRt-xm-XPS"/>
                                             <constraint firstItem="GHq-BF-6Ta" firstAttribute="top" secondItem="56k-TA-uYH" secondAttribute="bottom" id="pKh-4h-XHO"/>
                                             <constraint firstItem="Waa-NA-ruw" firstAttribute="leading" secondItem="qRE-MO-DUK" secondAttribute="leading" id="pRj-y7-Hce"/>

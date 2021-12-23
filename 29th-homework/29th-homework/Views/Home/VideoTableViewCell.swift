@@ -16,7 +16,7 @@ class VideoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     func setData(thumbnailImg: UIImage, channelImage: UIImage, title: String, channelName: String, viewsM: Int, weeks: Int) {
@@ -25,5 +25,4 @@ class VideoTableViewCell: UITableViewCell {
         titleLabel.text = title
         infoLabel.text = "\(channelName) ・ 조회수 \(viewsM)만회 ・ \(weeks)주 전"
     }
-    
 }

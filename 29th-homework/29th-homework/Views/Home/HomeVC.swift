@@ -15,14 +15,6 @@ class HomeVC: UIViewController {
         var channelImage: UIImage
     }
     
-    struct VideoDataForm {
-        var channelName: String
-        var channelImage: UIImage
-        var viewsM: Int
-        var uploadWeeks: Int
-        var title: String
-        var thumbnailImage: UIImage
-    }
     @IBOutlet weak var shortsCollectionView: UICollectionView!
     @IBOutlet weak var tagCollectionView: UICollectionView!
     @IBOutlet weak var videoTableView: UITableView!
@@ -55,6 +47,7 @@ class HomeVC: UIViewController {
         setUpUI()
         registerXib()
     }
+    
     @IBAction func tapProfileBtn(_ sender: Any) {
         guard let nextVC = UIStoryboard(name: "SignInVC", bundle: nil).instantiateViewController(withIdentifier: "SignInNavigationController") as? UINavigationController else { return }
         nextVC.modalPresentationStyle = .fullScreen
@@ -65,10 +58,12 @@ class HomeVC: UIViewController {
         let xibName = UINib(nibName: VideoTableViewCell.identifier, bundle: nil)
         videoTableView.register(xibName, forCellReuseIdentifier: VideoTableViewCell.identifier)
     }
+    
     func setUpUI() {
         videoTableView.separatorStyle = .none
         tagCollectionView.allowsSelection = true
     }
+    
     func setUpDelegate() {
         videoTableView.delegate = self
         [shortsCollectionView, tagCollectionView].forEach {

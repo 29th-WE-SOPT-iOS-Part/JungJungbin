@@ -16,7 +16,20 @@ extension HomeVC: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: VideoTableViewCell.identifier) as? VideoTableViewCell else { return UITableViewCell() }
         let curData = sampleVideoData[indexPath.row]
         cell.setData(thumbnailImg: curData.thumbnailImage, channelImage: curData.channelImage, title: curData.title, channelName: curData.channelName, viewsM: curData.viewsM, weeks: curData.uploadWeeks)
+        
+        let tapRecognizer = VideoInfoTapGesture(target: self, action: #selector(tapImageView(gesture:)))
+        tapRecognizer.videoInfo = sampleVideoData[indexPath.row]
+        cell.thumbnailImageView.isUserInteractionEnabled = true
+        cell.thumbnailImageView.addGestureRecognizer(tapRecognizer)
+
         return cell
+    }
+    
+    @objc func tapImageView(gesture: VideoInfoTapGesture) {
+        guard let vc = UIStoryboard(name: PlayVideoVC.ID, bundle: nil).instantiateViewController(withIdentifier: PlayVideoVC.ID) as? PlayVideoVC else { return }
+        vc.receivedData = gesture.videoInfo ?? VideoDataForm()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
 }
 
